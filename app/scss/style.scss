@@ -9,11 +9,10 @@
   background-size: cover;
   background-position: top;
 }
-.hero {
-  min-height: 750px;
-}
+
 .header {
   height: 150px;
+  margin-bottom: 150px;
   &__inner {
     padding: 50px 0 0;
     display: flex;
@@ -24,6 +23,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    color: $dark-green;
   }
   // &__button {
   //   color: #000;
@@ -51,22 +51,54 @@
   }
 }
 
-.button {
-  border: 2px solid #10ea67;
-  border-radius: 100px;
-  padding: 7px 14px;
-}
-.button:hover {
-  background-color: #10ea67;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-5px);
-}
-
-.content__title {
-  font-weight: 300;
-  font-size: 200px;
-  line-height: 244px;
-  min-width: 100%;
-  letter-spacing: 45px;
+// .button {
+//   border: 2px solid #10ea67;
+//   border-radius: 100px;
+//   padding: 7px 14px;
+// }
+// .button:hover {
+//   background-color: #10ea67;
+//   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+//   color: #fff;
+//   transform: translateY(-5px);
+// }
+.hero {
+  min-height: 750px;
+  &__title {
+    font-weight: 300;
+    font-size: 200px;
+    line-height: 244px;
+    min-width: 100%;
+    letter-spacing: 45px;
+    margin-bottom: 44px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 17px;
+    width: 510px;
+    border-left: 1px solid $green;
+    padding-left: 7px;
+  }
+  &__button{
+    width: 254px;
+    height: 60px;
+    border: 2px solid $green;
+    border-radius: 2px;
+    background-color: rgba($green, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 16px 44px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__button-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
+  }
 }
