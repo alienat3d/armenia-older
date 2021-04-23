@@ -1,7 +1,20 @@
-$title: #363838;
-$default: #5A5A5A;
+// Color Variables
+$default: #fff;
+$secondary: #000;
+
+$nav-gray: #A6A6A6;
+$green: #10EA67;
+$gray: #8E8E8E;
+$light-gray: #919191;
+
+// Font Variables
 
 %title-font{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}
+
+%text-font{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }

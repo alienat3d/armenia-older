@@ -1,19 +1,9 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+@import 'global';
+@import 'reset.scss';
+@import 'vars';
+@import 'media';
 
 body {
-  font: 100% Montserrat, sans-serif;
-  color: #fff;
-  line-height: 15px;
   background-image: url(../img/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
