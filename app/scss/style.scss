@@ -12,7 +12,7 @@
 
 .header {
   height: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 160px;
   &__inner {
     padding: 50px 0 0;
     display: flex;
@@ -63,7 +63,8 @@
 //   transform: translateY(-5px);
 // }
 .hero {
-  min-height: 750px;
+  // min-height: 750px;
+  padding-bottom: 80px;
   &__title {
     margin-bottom: 44px;
     background-image: url(../images/armenia.png);
@@ -109,9 +110,37 @@
     margin-right: 14px;
   }
 }
-.social{
+.social {
   width: 134px;
   height: 20px;
   display: flex;
   justify-content: space-between;
+}
+.about-armenia {
+  background-color: #1e7e1c;
+  text-align: center;
+  position: relative;
+  &__title {
+    padding: 88px 35px 85px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+  &__title::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 35%;
+    background-color: #fff;
+    left: 0;
+    top: 125px;
+  }
+  &__title::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 35%;
+    background-color: #fff;
+    right: 0;
+    top: 125px;
+  }
 }
