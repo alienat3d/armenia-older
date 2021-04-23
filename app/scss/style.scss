@@ -6,7 +6,7 @@
 .hero-wrapper {
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: top;
 }
 
@@ -65,26 +65,33 @@
 .hero {
   min-height: 750px;
   &__title {
+    margin-bottom: 44px;
+    background-image: url(../images/armenia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title-word {
+    color: transparent;
     font-weight: 300;
     font-size: 200px;
     line-height: 244px;
     min-width: 100%;
     letter-spacing: 45px;
-    margin-bottom: 44px;
   }
-  &__bottom{
+  &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 170px;
   }
-  &__text{
+  &__text {
     font-size: 14px;
     line-height: 17px;
     width: 510px;
     border-left: 1px solid $green;
     padding-left: 7px;
   }
-  &__button{
+  &__button {
     width: 254px;
     height: 60px;
     border: 2px solid $green;
@@ -96,9 +103,15 @@
     font-size: 16px;
     line-height: 20px;
   }
-  &__button-icon{
+  &__button-icon {
     width: 30px;
     height: 30px;
     margin-right: 14px;
   }
+}
+.social{
+  width: 134px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
 }
