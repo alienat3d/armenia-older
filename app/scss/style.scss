@@ -64,7 +64,7 @@
 // }
 .hero {
   // min-height: 750px;
-  padding-bottom: 80px;
+  padding-bottom: 79px;
   &__title {
     margin-bottom: 44px;
     background-image: url(../images/armenia.png);
@@ -120,13 +120,13 @@
   background-color: #1e7e1c;
   text-align: center;
   position: relative;
-  &__title {
+  &__heading {
     padding: 88px 35px 85px;
     font-size: 60px;
     line-height: 73px;
   }
-  &__title::before {
-    content: '';
+  &__heading::before {
+    content: "";
     position: absolute;
     height: 1px;
     width: 35%;
@@ -134,8 +134,8 @@
     left: 0;
     top: 125px;
   }
-  &__title::after {
-    content: '';
+  &__heading::after {
+    content: "";
     position: absolute;
     height: 1px;
     width: 35%;
@@ -143,4 +143,71 @@
     right: 0;
     top: 125px;
   }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    text-align: left;
+    width: 466px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 37px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+  &__text-link {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 16px;
+    position: relative;
+    width: 124px;
+    padding-bottom: 5px;
+    color: rgba(#fff, 0.7);
+    border-bottom: 1px solid rgba(#fff, 0.7);
+    transition: all 0.5s;
+  }
+  &__text-link::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+    background-image: url(../images/icons/arrow-down.svg);
+    left: 110px;
+    top: 6px;
+    transition: all 0.5s;
+  }
+  &__text-link:hover {
+    color: $default;
+    border-bottom: 1px solid $default;
+  }
+  &__text-link:hover:after {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+
+  &__pictures {
+  }
+
+  &__video-cover {
+  }
+
+  &__video-background {
+  }
+}
+.home {
 }
