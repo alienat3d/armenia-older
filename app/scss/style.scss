@@ -116,32 +116,42 @@
   display: flex;
   justify-content: space-between;
 }
+.heading {
+  font-size: 60px;
+  line-height: 73px;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 35%;
+  left: 0;
+  top: 125px;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 35%;
+  right: 0;
+  top: 125px;
+}
+.title {
+  font-size: 30px;
+  line-height: 37px;
+}
 .about-armenia {
   background-color: #1e7e1c;
   text-align: center;
   position: relative;
   &__heading {
     padding: 85px 35px;
-    font-size: 60px;
-    line-height: 73px;
   }
   &__heading::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 35%;
     background-color: #fff;
-    left: 0;
-    top: 125px;
   }
   &__heading::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 35%;
     background-color: #fff;
-    right: 0;
-    top: 125px;
   }
 
   &__inner {
@@ -158,8 +168,6 @@
     margin-right: 85px;
   }
   &__title {
-    font-size: 30px;
-    line-height: 37px;
     margin-bottom: 37px;
   }
 
