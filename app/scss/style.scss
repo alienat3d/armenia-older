@@ -263,46 +263,78 @@
   flex-direction: column;
   color: $default;
   &__image {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
 
   &__info {
+    text-align: center;
+    padding: 22px 20px 15px;
+    background-color: $dark-green-card;
+    filter: drop-shadow(0px 4.02393px 10.0598px rgba(0, 0, 0, 0.6));
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
 
   &__title {
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 20px;
+    padding-bottom: 22px;
   }
 
   &__divider {
+    margin: 0 auto;
+    width: 52px;
+    height: 0.5px;
+    background-color: rgba($default, 0.6);
+    margin-bottom: 23px;
   }
 
   &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 28px;
   }
-
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
   &__price {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $green;
   }
 
   &__stats {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $gray;
   }
 
   &__stats-days {
+    display: flex;
+    margin-right: 11px;
   }
 
-  &__stat-days-img {
-  }
-
-  &__stat-days-txt {
+  &__stat-days-img,
+  &__stat-persons-img {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
   }
 
   &__stats-persons {
-  }
-
-  &__stat-persons-img {
-  }
-
-  &__stat-persons-txt {
+    display: flex;
   }
 }
+
 .offer {
-    background-image: url(../images/offer-background.jpg);
+  background-image: url(../images/offer-background.jpg);
   min-height: 900px;
   background-attachment: fixed;
   background-position: center;
@@ -320,10 +352,12 @@
 
   &__title {
     text-align: left;
+    margin-bottom: 40px;
   }
 
   &__colorful-tours {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
 }
