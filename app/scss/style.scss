@@ -63,12 +63,12 @@
 //   transform: translateY(-5px);
 // }
 .hero {
-  // min-height: 750px;
-  padding-bottom: 79px;
+  padding-bottom: 80px;
   &__title {
     margin-bottom: 44px;
     background-image: url(../images/armenia.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
   }
   &__title-word {
@@ -122,6 +122,7 @@
   line-height: 73px;
   padding: 85px 35px;
   position: relative;
+  text-align: center;
 }
 .heading::before,
 .heading::after {
@@ -347,6 +348,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: $secondary;
+  padding-bottom: 80px;
   &__heading {
     text-align: center;
   }
@@ -365,5 +367,118 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+  }
+}
+.about-us {
+  background-color: #000;
+  padding-bottom: 80px;
+  &__heading::before,
+  &__heading::after {
+    background-color: $default;
+    width: 42%;
+  }
+
+  &__description {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 884px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 75px;
+  }
+
+  &__stats {
+    padding: 30px 120px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid $green;
+    border-bottom: 2px solid $green;
+    margin-bottom: 70px;
+  }
+
+  &__stats-item {
+    display: flex;
+    flex-direction: column;
+    width: 237px;
+    text-align: center;
+  }
+
+  &__stats-number {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 15px;
+  }
+
+  &__stats-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__team-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 35px;
+  }
+
+  &__team-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  &__team-photos {
+    display: flex;
+  }
+
+  &__team-photo {
+    width: 216px;
+    height: 211px;
+    margin-right: 25px;
+  }
+  &__team-main-guide-photo {
+    width: 428px;
+    height: 418px;
+    background-image: url(../images/about-us/main-guide.jpg);
+    position: absolute;
+    top: 30px;
+    left: 514px;
+  }
+  &__team-main-guide {
+    margin-right: 50px;
+    width: 524px;
+    height: 420px;
+    background-color: rgba(#1e7e1c, 0.4);
+    font-style: italic;
+    padding: 127px 28px 167px 275px;
+  }
+
+  &__team-team-main-guide-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__team-team-main-guide-info {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    position: relative;
+  }
+  &__team-team-main-guide-info::before {
+    content: "";
+    width: 4px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 9px;
+    left: -7px;
   }
 }
