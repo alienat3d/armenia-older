@@ -49,16 +49,16 @@
             </a>
           </div>
           <div class="social hero__social">
-            <a href="#" class="social__link">
+            <a class="social__link" href="#">
               <img class="social__img" src="images/icons/social/instagram.svg" alt="иконка Instagram">
             </a>
-            <a href="#" class="social__link">
+            <a class="social__link" href="#">
               <img class="social__img" src="images/icons/social/telegram.svg" alt="иконка Telegram">
             </a>
-            <a href="#" class="social__link">
+            <a class="social__link" href="#">
               <img class="social__img" src="images/icons/social/whatsapp.svg" alt="иконка WhatsApp">
             </a>
-            <a href="#" class="social__link">
+            <a class="social__link" href="#">
               <img class="social__img" src="images/icons/social/facebook.svg" alt="иконка Facebook">
             </a>
           </div>
@@ -197,9 +197,9 @@
             <h4 class="card__title">Гастрономический тур</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Татевский монастырь - уникальный шедевр армянской архитекстуры, построенный в 9-ом веке. Этот монастырь
-              являлся одним из древнейших духовных центров средневековой Армении, а также крупнейшим университетом
-              своего времени.
+              Армения славится своими простыми, но очень вкусными блюдами, и впечатления от посещения страны точно будет
+              неполной, если вы не попробуйте основные блюда каждого региона. Тур включает несколько мастер-классов при
+              участии профессиональных наставников.
             </p>
             <div class="card__bottom">
               <div class="card__price">170$</div>
@@ -381,10 +381,89 @@
   </section>
 
   <section class="contacts">
-    
-  </section>
 
+    <div class="container">
+      <h2 class="heading contacts__heading">Контакты</h2>
+      <div class="contacts__info-block">
+        <div class="contacts__info-item">
+          <img class="contacts__info-icon" src="images/icons/pin.svg" alt="иконка указатель на карте">
+          <p class="contacts__info-title">
+            Адрес:
+          </p>
+          <p class="contacts__info-text">
+            Циолковского 100/10, Москва
+          </p>
+        </div>
+        <div class="contacts__info-item">
+          <img class="contacts__info-icon" src="images/icons/phone.svg" alt="иконка телефон">
+          <p class="contacts__info-title">
+            Телефон:
+          </p>
+          <p class="contacts__info-text">
+            +7-777-777-7777
+          </p>
+        </div>
+        <div class="contacts__info-item">
+          <img class="contacts__info-icon" src="images/icons/email.svg" alt="иконка почта">
+          <p class="contacts__info-title">
+            E-mail:
+          </p>
+          <p class="contacts__info-text">
+            info@mrsguide.com
+          </p>
+        </div>
+      </div>
+      <h3 class="title contacts__form-title">Начать незабываемое путешествие</h3>
+      <form class="contacts__form" action="mailto:info@mrsguide.com" method="POST" enctype="multipart/form-data"
+        name="EmailForm">
+        Name:
+        <input class="contacts__form-input" type="text" name="ContactName" placeholder="Введите имя">
+        <input class="contacts__form-input" type="text" name="ContactName" placeholder="Введите e-mail">
+        <textarea class="contacts__form-textaread" name="ContactComment" rows="6" cols="20"></textarea>
+        <input class="contacts__form-button" type="submit" value="Отправить">
+      </form>
+    </div>
+  </section>
   </main>
+  <footer class="footer">
+    <div class="footer__left-side">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-image" src="images/icons/logo-black.svg" alt="логотип в виде компаса">
+        <p class="footer__logo-text">Mrs Guide</p>
+      </a>
+      <p class="footer__email">
+        Пишите:
+      </p>
+      <p class="footer__email">
+        mrsguide77@gmail.com
+      </p>
+    </div>
+    <form class="footer__form">
+      <h4 class="footer__form-title">
+        Оставить заявку
+      </h4>
+      <p class="footer__form-subtitle">Оповещения о новых турах по горячим ценам</p>
+      <input class="footer__input" type="text" placeholder="Введите e-mail">
+      <button class="footer__button" type="submit">Подписаться</button>
+    </form>
+    <div class="footer__right-side">
+      <div class="social footer__social">
+        <a class="social__link" href="#">
+          <img class="social__img" src="images/icons/social/instagram.svg" alt="иконка Instagram">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__img" src="images/icons/social/telegram.svg" alt="иконка Telegram">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__img" src="images/icons/social/whatsapp.svg" alt="иконка WhatsApp">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__img" src="images/icons/social/facebook.svg" alt="иконка Facebook">
+        </a>
+      </div>
+      <p class="footer__copyright">© 2020г. Все права защищены</p>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
