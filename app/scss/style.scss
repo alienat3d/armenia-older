@@ -499,7 +499,7 @@
     align-items: center;
   }
   &__inner-background::before {
-    content: '';
+    content: "";
     width: 1638px;
     height: 734px;
     border-radius: 5px;
@@ -527,8 +527,169 @@
     display: flex;
     justify-content: space-between;
   }
-  &__home-btn{
+  &__home-btn {
     margin-top: 80px;
     margin-bottom: -44px;
+  }
+}
+.bottom-wrapper {
+  min-height: 900px;
+  background-image: url(../images/contacts-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contacts {
+  &__heading {
+  }
+  &__heading::before,
+  &__heading::after {
+    background-color: $default;
+    width: 39%;
+  }
+  &__info-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 220px 62px 190px;
+  }
+
+  &__info-item {
+    min-width: 240px;
+    display: flex;
+    align-items: center;
+  }
+  &__info-item + &__info-item {
+    min-width: 150px;
+  }
+
+  &__info-icon {
+    margin-right: 15px;
+  }
+  &__item-textbox {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__info-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  &__form {
+    width: 100%;
+    min-height: 312px;
+    background-color: rgba(#fff, 0.75);
+    padding: 32px 22px 45px;
+    text-align: center;
+  }
+
+  &__form-title {
+    margin-bottom: 30px;
+    color: $secondary;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  &__form-input {
+    width: 520px;
+    height: 45px;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    border: 0.67px solid rgba(#000, 0.5);
+    border-radius: 2.68px;
+    background-color: transparent;
+  }
+  &__form-input::placeholder,
+  &__form-textarea::placeholder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(#000, 0.7);
+  }
+  &__form-input + &__form-input {
+    margin-left: 84px;
+  }
+
+  &__form-textarea {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 12px auto 35px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    resize: none;
+    width: 1128px;
+    background-color: transparent;
+  }
+  &__form-button {
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 45px;
+    border: 4px solid $green;
+    border-radius: 2.3px;
+  }
+}
+.footer {
+  min-width: 200px;
+  bottom: 0;
+  &__left-side {
+  }
+
+  &__logo {
+  }
+
+  &__logo-image {
+  }
+
+  &__logo-text {
+  }
+
+  &__email {
+  }
+
+  &__form {
+  }
+
+  &__form-title {
+  }
+
+  &__form-subtitle {
+  }
+
+  &__input {
+  }
+
+  &__button {
+  }
+
+  &__right-side {
+  }
+
+  &__social {
+  }
+
+  &__copyright {
+  }
+}
+.social {
+  &__link {
+  }
+
+  &__img {
   }
 }
