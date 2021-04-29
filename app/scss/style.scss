@@ -9,7 +9,16 @@
   background-size: cover;
   background-position: top;
 }
-
+.navigation {
+  &__bar {
+    display: none;
+  }
+  &__item {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+  }
+}
 .header {
   height: 150px;
   margin-bottom: 160px;
@@ -540,8 +549,6 @@
 }
 .contacts {
   margin-bottom: 72px;
-  &__heading {
-  }
   &__heading::before,
   &__heading::after {
     background-color: $default;
@@ -737,7 +744,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  &__social-wrapper{
+  &__social-wrapper {
     display: flex;
     justify-content: flex-end;
   }
