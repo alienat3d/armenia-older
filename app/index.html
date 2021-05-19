@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -37,7 +38,8 @@
           </div>
           <div class="hero__bottom">
             <p class="hero__text">
-              Армения, Армения, Армения.. Страна, которая крадет сердце каждого, кто там однажды побывал. Невозможно не
+              Армения, Армения, Армения.. Страна, которая крадет сердце каждого, кто там однажды побывал.
+              Невозможно не
               покориться красоте природы, вкусу армянской кухни и гостеприимству ее жителей.
             </p>
             <a class="button hero__button" href="#">
@@ -63,44 +65,52 @@
           </div>
 
           <nav class="navigation">
-            <ul class="navigation__buttons-bar">
-              <li class="navigation__btn"></li>
-              <a class="navigation__btn-link navigation__btn--hero" href="#">
-              <li class="navigation__btn navigation__btn--hero"></li></a>
-              <li class="navigation__btn navigation__btn--hero"><a class="navigation__btn-link" href="#"></a></li>
-              <li class="navigation__btn navigation__btn--hero"><a class="navigation__btn-link" href="#"></a></li>
-              <li class="navigation__btn navigation__btn--hero"><a class="navigation__btn-link" href="#"></a></li>
-              <li class="navigation__btn navigation__btn--hero"><a class="navigation__btn-link" href="#"></a></li>
-            </ul>
-            <ul class="navigation__menu">
-              <li class="navigation__item navigation__item--active">
-                <a class="navigation__link" href="#">
-                  <span>В начало</span>
-                </a>
+            <ul id="navMenu" class="navigation__buttons-bar navigation__buttons-bar--hovered">
+              <li class="navigation__btn navigation__btn--hero">
+                <a class="navigation__btn-link" data-goto=".about-armenia" href="#"></a>
               </li>
-              <li class="navigation__item--hero">
-                <a class="navigation__link" href="#">
-                  <span>Об Армении</span>
-                </a>
+              <li class="navigation__btn navigation__btn--hero">
+                <a class="navigation__btn-link" data-goto=".offer" href="#"></a>
               </li>
-              <li class="navigation__item--hero">
-                <a class="navigation__link" href="#">
-                  <span>Наши предложения</span>
-                </a>
+              <li class="navigation__btn navigation__btn--hero">
+                <a class="navigation__btn-link" data-goto=".about-us" href="#"></a>
               </li>
-              <li class="navigation__item navigation__item--hero">
-                <a class="navigation__link" href="#">
-                  <span>О нас</span>
-                </a>
+              <li class="navigation__btn navigation__btn--hero">
+                <a class="navigation__btn-link" data-goto=".locations" href="#"></a>
               </li>
-              <li class="navigation__item--hero">
-                <a class="navigation__link" href="#"><span>Впечатляющие локации</span>
-                </a>
+              <li class="navigation__btn navigation__btn--hero">
+                <a class="navigation__btn-link" data-goto=".contacts" href="#"></a>
               </li>
-              <li class="navigation__item--hero">
-                <a class="navigation__link" href="#"><span>Контакты</span>
-                </a>
-              </li>
+
+              <div class="navigation__menu-wrapper">
+                <ul id="menuItems" class="navigation__menu">
+                  <li class="navigation__item">
+                    <a class="navigation__link" data-goto=".about-armenia" href="#">
+                      Об Армении
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" data-goto=".offer" href="#">
+                      Туры
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" data-goto=".about-us" href="#">
+                      О нас
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" data-goto=".locations" href="#">
+                      Галерея
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" data-goto=".contacts" href="#">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </ul>
           </nav>
         </div>
@@ -115,8 +125,10 @@
             Зачем ехать в Армению?
           </h3>
           <p class="about-armenia__text">
-            Армения – музей под открытым небом, хранящий вечные духовные ценности. Это один из древнейших центров<br>
-            цивилизации, зародившийся примерно в четвертом тысячелетии до н. э. Армения обладает древнейшим<br>
+            Армения – музей под открытым небом, хранящий вечные духовные ценности. Это один из древнейших
+            центров<br>
+            цивилизации, зародившийся примерно в четвертом тысячелетии до н. э. Армения обладает
+            древнейшим<br>
             культурным наследием: богата храмами, церквями,<br> памятниками.
             Поэтому путешествие по Армении<br>
             своего рода паломничество от одного монастыря<br>
@@ -149,8 +161,10 @@
             <h4 class="card__title">Винный тур</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Армения – это одна из древнейших колыбелей виноделия. Об этом свидетельствует 6000-летняя пещерная
-              винодельня в районе Арени. культура виноделия отображалась практически во всех направлениях армянского
+              Армения – это одна из древнейших колыбелей виноделия. Об этом свидетельствует 6000-летняя
+              пещерная
+              винодельня в районе Арени. культура виноделия отображалась практически во всех направлениях
+              армянского
               прикладного искусства.
             </p>
             <div class="card__bottom">
@@ -174,8 +188,10 @@
             <h4 class="card__title">Тур в Татев</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Татевский монастырь - уникальный шедевр армянской архитектуры, построенный в 9-ом веке. Этот монастырь
-              являлся одним из древнейших духовных центров средневековой Армении, а также крупнейшим университетом
+              Татевский монастырь - уникальный шедевр армянской архитектуры, построенный в 9-ом веке. Этот
+              монастырь
+              являлся одним из древнейших духовных центров средневековой Армении, а также крупнейшим
+              университетом
               своего времени.
             </p>
             <div class="card__bottom">
@@ -199,8 +215,10 @@
             <h4 class="card__title">Гастрономический тур</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Армения славится своими простыми, но очень вкусными блюдами, и впечатления от посещения страны точно будет
-              неполной, если вы не попробуйте основные блюда каждого региона. Тур включает несколько мастер-классов при
+              Армения славится своими простыми, но очень вкусными блюдами, и впечатления от посещения
+              страны точно будет
+              неполной, если вы не попробуйте основные блюда каждого региона. Тур включает несколько
+              мастер-классов при
               участии профессиональных наставников.
             </p>
             <div class="card__bottom">
@@ -228,9 +246,11 @@
             <h4 class="card__title">Восхождение на Арагац</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Мощнейший по своей энергетике и красоте потухший вулкан Арагац является высшей точкой современной
+              Мощнейший по своей энергетике и красоте потухший вулкан Арагац является высшей точкой
+              современной
               Армении.
-              Имеет 4 вершины. Между ними расположен гигантский и живописнейший кратер. Мы совершим восхождение на
+              Имеет 4 вершины. Между ними расположен гигантский и живописнейший кратер. Мы совершим
+              восхождение на
               Южную
               вершину (3887 м).
             </p>
@@ -257,9 +277,11 @@
             <h4 class="card__title">По склонам Тексарских гор</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Утром начинаем с восхождения по узким ущельям к монастырю, который находится на склонах Тексарских гор.
+              Утром начинаем с восхождения по узким ущельям к монастырю, который находится на склонах
+              Тексарских гор.
               Во
-              время похода с высоты птичьего полета видна вся Вайоцдзорская область. Пройдя хребет, спускаемся назад
+              время похода с высоты птичьего полета видна вся Вайоцдзорская область. Пройдя хребет,
+              спускаемся назад
               по
               другой тропе.
             </p>
@@ -286,7 +308,8 @@
             <h4 class="card__title">Тур к высокогорной крепости</h4>
             <div class="card__divider"></div>
             <p class="card__text">
-              Крепость Смбатаберд построенная в V веке, является одной из наиболее хорошо сохранившихся крепостей
+              Крепость Смбатаберд построенная в V веке, является одной из наиболее хорошо сохранившихся
+              крепостей
               Армении. Она окружена круто обрывающимися
               скалами. Имеет мощные крепостные стены с
               полукруглыми башнями.
@@ -311,7 +334,6 @@
       <a class="home-btn offer__home-btn" href="#"></a>
     </div>
   </section>
-
   <section class="about-us">
     <h2 class="heading about-us__heading">О нас</h2>
     <div class="container">
@@ -358,7 +380,6 @@
       <a class="home-btn about-us__home-btn" href="#"></a>
     </div>
   </section>
-
   <section class="locations">
     <h2 class="heading locations__heading">Впечатляющие локации</h2>
     <div class="container">
@@ -478,7 +499,8 @@
       </div>
     </footer>
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

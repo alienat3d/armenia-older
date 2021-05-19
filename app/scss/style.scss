@@ -4,6 +4,7 @@
 @import "media";
 
 .hero-wrapper {
+  min-height: 100vh;
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +71,41 @@
     position: absolute;
     top: 8%;
     right: 3%;
+    transition: all 0.3s ease 0s;
+    padding-left: 15px;
   }
+
+  &__buttons-bar:hover &__menu &__item {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+    pointer-events: all;
+  }
+
+  // &__buttons-bar:hover &__menu-wrapper {
+  //   position: absolute;
+  //   top: -1%;
+  //   right: 220%;
+  //   width: 254px;
+  //   height: 422px;
+  //   background: linear-gradient(271.44deg, #c4e3cb 1.34%, rgba(189, 207, 193, 0) 93.68%
+  //   );
+  //   filter: blur(20px);
+  //   z-index: 1;
+  // }
+
+  // &__buttons-bar::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   width: 261px;
+  //   height: 261px;
+  //   top: -5px;
+  //   left: -244px;
+  //   right: -15px;
+  //   bottom: -15px;
+  //   z-index: 1;
+  // }
 
   &__btn {
     background-color: rgba(#fff, 0.8);
@@ -81,71 +116,88 @@
     transition: all, 0.3s;
   }
 
-  &__btn--hero {
-    background-color: rgba(#5f6325, 0.8);
-  }
+  // &__btn--hero {
+  //   background-color: rgba(#5f6325, 0.8);
+  // }
 
   &__btn--hero:hover {
     cursor: pointer;
     background-color: rgba(#fff, 0.8);
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 3px 4px rgba(#fff, 0.3);
     transform: translateY(-1px);
   }
 
-  &__btn-link {
-    position: relative;
-    display: block;
-  }
+  // &__btn-link {
+  //   position: relative;
+  //   display: block;
+  // }
 
-  &__btn-link::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 261px;
-    height: 22px;
-    top: -5px;
-    left: -244px;
-    right: -15px;
-    bottom: -15px;
-  }
+  // &__btn-link::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   width: 261px;
+  //   height: 22px;
+  //   top: -5px;
+  //   left: -244px;
+  //   right: -15px;
+  //   bottom: -15px;
+  // }
+
+  // &__btn-link::before:hover ~ .navigation__menu{
+  //   display: block;
+  // }
 
   &__menu {
     position: absolute;
     top: 7.5%;
     right: 4.5%;
     display: none;
+    padding: 15px;
   }
-
-  &__buttons-bar:hover ~ &__menu {
-    display: block;
+  &__menu li {
+    margin: 0 0 15px 0;
+  }
+  &__menu li:last-child {
+    margin: 0;
   }
 
   &__item {
-    margin-bottom: 15px;
+    position: absolute;
+    top: 7.5%;
+    right: 4.5%;
+    display: none;
+    padding: 15px;
     text-align: right;
     font-weight: 400;
     font-size: 18px;
+    color: $secondary;
   }
-
-  &__item--hero span {
-    color: #fff;
-    background-color: rgba(#5f6325, 0.8);
-    border-radius: 10px;
-    padding: 0 9px;
-  }
-
-  &__item--active span {
-    color: #fff;
-    font-weight: 700;
-    background-color: rgba($green, 0.2);
-    border: 1px solid $green;
-    border-radius: 10px;
-    padding: 0 9px;
-  }
-
-  &__link {
-  }
+  // &__item:hover.navigation__btn--hero {
+  //   background-color: rgba(#fff, 0.8);
+  //   box-shadow: 0px 3px 4px rgba(#fff, 0.3);
+  //   transform: translateY(-1px);
+  // }
 }
+// &__item--hero span {
+//   color: #fff;
+//   background-color: rgba(#5f6325, 0.8);
+//   border-radius: 10px;
+//   padding: 0 9px;
+// }
+
+// &__item--active span {
+//   color: #fff;
+//   font-weight: 700;
+//   background-color: rgba($green, 0.2);
+//   border: 1px solid $green;
+//   border-radius: 10px;
+//   padding: 0 9px;
+// }
+
+// .navigation:hover .navigation__menu {
+//   display: block;
+// }
 
 // === / NAVIGATION ===
 //   &__link {
@@ -203,6 +255,7 @@
     padding-left: 7px;
   }
   &__button {
+    position: relative;
     width: 254px;
     height: 60px;
     border: 2px solid $green;
@@ -213,7 +266,21 @@
     padding: 16px 44px;
     font-size: 16px;
     line-height: 20px;
+    // ------------
+    // position: relative;
+    // display: block;
+    // overflow: hidden;
+    // width: 254px;
+    // height: 60px;
+    // border: 2px solid $green;
+    // border-radius: 2px;
+    // background-color: rgba($green, 0.2);
+    // align-items: center;
+    // padding: 16px 44px;
+    // font-size: 16px;
+    // line-height: 20px;
   }
+
   &__button-icon {
     width: 30px;
     height: 30px;
