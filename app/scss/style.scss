@@ -6,7 +6,7 @@
 .hero-wrapper {
   position: relative;
   min-height: 100vh;
-  background-image: url(../images/hero-background.jpg);
+  background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -71,7 +71,7 @@
   &__buttons-bar {
     position: absolute;
     top: 50%;
-    right: 4%;
+    right: 2%;
     transform: translateY(-60%);
     transition: all 0.3s ease 0s;
     padding-left: 15px;
@@ -79,8 +79,9 @@
   // === menu showing animation ===
   &__buttons-bar:hover &__menu,
   &__buttons-bar:hover &__item,
-  &__buttons-bar:hover &__link {
-    display: inline-block;
+  &__buttons-bar:hover &__link,
+  &__buttons-bar:hover &__menu::before {
+    display: block;
 
     -webkit-animation: fadeInFromNone 0.5s ease-out;
     -moz-animation: fadeInFromNone 0.5s ease-out;
@@ -156,170 +157,73 @@
     }
   }
   // === / menu showing animation ===
-  // &__buttons-bar:hover &__item,
-  // &__buttons-bar:hover &__link
-  &__buttons-bar:hover &__menu {
-    display: flex;
-    flex-direction: column;
+  &__buttons-bar:hover &__link {
+    display: inline-flex;
   }
-  // &__buttons-bar::before {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   width: 261px;
-  //   height: 261px;
-  //   top: -5px;
-  //   left: -244px;
-  //   right: -15px;
-  //   bottom: -15px;
-  //   z-index: 1;
-  // }
-
   &__btn-link {
     border-radius: 3px;
     width: 11px;
     height: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     transition: all, 0.3s;
     &--hero {
       background-color: rgba(#5f6325, 0.8);
     }
   }
-
-  // &__btn--hero {
-  //   background-color: rgba(#5f6325, 0.8);
-  // }
-
-  // &__btn--hero:hover {
-  //   cursor: pointer;
-  //   background-color: rgba(#fff, 0.8);
-  //   box-shadow: 0px 3px 4px rgba(#fff, 0.3);
-  //   transform: translateY(-1px);
-  // }
-
-  // &__btn-link {
-  //   position: relative;
-  //   display: block;
-  // }
-
-  // &__btn-link::before {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   width: 261px;
-  //   height: 22px;
-  //   top: -5px;
-  //   left: -244px;
-  //   right: -15px;
-  //   bottom: -15px;
-  // }
-
-  // &__btn-link::before:hover ~ .navigation__menu{
-  //   display: block;
-  // }
-
   &__menu {
     position: absolute;
     display: none;
     top: 50%;
     right: 4%;
-    transform: translate(10%, -60%);
+    transform: translate(3%, -43%);
+    width: 143px;
+    height: 227px;
+    padding: 97px 25px 98px 86px;
+  }
+  &__menu::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 4%;
+    transform: translate(12%, -60%);
     width: 254px;
-    height: 422px;
+    height: 310px;
     background: linear-gradient(
       271.44deg,
       #c4e3cb 1.34%,
       rgba(189, 207, 193, 0) 93.68%
     );
     filter: blur(20px);
+  }
+  &__item {
+    padding-bottom: 15px;
     text-align: right;
+  }
+  &__link {
+    height: 22px;
+    cursor: pointer;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: $secondary;
+    color: #000;
   }
-
-  &__item {
-    // position: absolute;
-    // z-index: 2;
-    // display: none;
-    // top: 50%;
-    // right: 4%;
-    // width: 500px;
-    // transform: translateY(-60%);
-    // padding: 15px;
-    padding-bottom: 29.5px;
+  &__link-btn {
+    display: inline;
+    height: 17px;
+    width: 19px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-left: 8px;
   }
-  &__menu li:last-child {
-    padding: 0;
-  }
-  &__link {
-    // position: absolute;
-    // display: none;
-    // top: 50%;
-    // right: 4%;
-    // transform: translateY(-60%);
-    // text-align: right;
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 22px;
-    // color: $secondary;
-  }
-  // &__item:hover.navigation__btn--hero {
-  //   background-color: rgba(#fff, 0.8);
-  //   box-shadow: 0px 3px 4px rgba(#fff, 0.3);
-  //   transform: translateY(-1px);
-  // }
 }
-// &__item--hero span {
-//   color: #fff;
-//   background-color: rgba(#5f6325, 0.8);
-//   border-radius: 10px;
-//   padding: 0 9px;
-// }
-
-// &__item--active span {
-//   color: #fff;
-//   font-weight: 700;
-//   background-color: rgba($green, 0.2);
-//   border: 1px solid $green;
-//   border-radius: 10px;
-//   padding: 0 9px;
-// }
-
-// .navigation:hover .navigation__menu {
-//   display: block;
-// }
-
-// === / NAVIGATION ===
-//   &__link {
-//     color: transparent;
-//     transition: all, 0.5s;
-//   }
-
-//   &__link:hover {
-//     position: absolute;
-//     top: -19px;
-//     right: 0;
-//     width: 184px;
-//     height: 200px;
-//     border: 1px solid $green;
-//     border-radius: 10px;
-//     background-color: rgba($green, 0.2);
-//     padding-top: 11px;
-//     margin-bottom: 20px;
-//     color: #fff;
-//     text-align: center;
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 22px;
-//   }
-
 .hero {
   padding-bottom: 80px;
   &__title {
     margin-bottom: 44px;
-    background-image: url(../images/armenia.png);
+    background-image: url("../images/armenia.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -422,7 +326,7 @@
 .home-btn {
   width: 29px;
   height: 29px;
-  background-image: url(../images/icons/home.svg);
+  background-image: url("../images/icons/home.svg");
 }
 .about-armenia {
   background-color: #1e7e1c;
@@ -477,7 +381,7 @@
     height: 5px;
     -webkit-filter: brightness(75%);
     filter: brightness(75%);
-    background-image: url(../images/icons/arrow-down.svg);
+    background-image: url("../images/icons/arrow-down.svg");
     left: 110px;
     top: 6px;
     transition: all 0.5s;
@@ -571,6 +475,7 @@
   }
 
   &__text {
+    opacity: 0.8;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -617,7 +522,7 @@
 }
 
 .offer {
-  background-image: url(../images/offer-background.jpg);
+  background-image: url("../images/offer-background.jpg");
   min-height: 900px;
   background-attachment: fixed;
   background-position: center;
@@ -719,7 +624,7 @@
   &__team-main-guide-photo {
     width: 428px;
     height: 418px;
-    background-image: url(../images/about-us/main-guide.jpg);
+    background-image: url("../images/about-us/main-guide.jpg");
     position: absolute;
     top: 30px;
     left: 514px;
@@ -779,7 +684,7 @@
     width: 1638px;
     height: 734px;
     border-radius: 5px;
-    background-image: url(../images/gallery/background.jpg);
+    background-image: url("../images/gallery/background.jpg");
     opacity: 0.45;
     position: absolute;
     top: 0;
@@ -810,7 +715,7 @@
 }
 .bottom-wrapper {
   min-height: 900px;
-  background-image: url(../images/contacts-background.jpg);
+  background-image: url("../images/contacts-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
