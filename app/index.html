@@ -42,7 +42,7 @@
               Невозможно не
               покориться красоте природы, вкусу армянской кухни и гостеприимству ее жителей.
             </p>
-            <a class="button hero__button" href="#">
+            <a class="button hero__button" href="#offer">
               <img class="hero__button-icon" src="images/icons/play-button-green.svg" alt="зелёная иконка play"></img>
               <p class="hero__button-text">
                 Смотреть тур
@@ -65,58 +65,55 @@
           </div>
 
           <nav class="navigation">
-            <ul id="navMenu" class="navigation__buttons-bar navigation__buttons-bar--hovered">
-              <li class="navigation__btn navigation__btn--hero">
-                <a class="navigation__btn-link" data-goto=".about-armenia" href="#"></a>
+            <ul class="navigation__buttons-bar navigation__buttons-bar--hovered">
+              <li class="navigation__btn">
+                <a class="navigation__btn-link navigation__btn-link--hero" href="#about-armenia"></a>
               </li>
-              <li class="navigation__btn navigation__btn--hero">
-                <a class="navigation__btn-link" data-goto=".offer" href="#"></a>
+              <li class="navigation__btn">
+                <a class="navigation__btn-link navigation__btn-link--hero" href="#offer"></a>
               </li>
-              <li class="navigation__btn navigation__btn--hero">
-                <a class="navigation__btn-link" data-goto=".about-us" href="#"></a>
+              <li class="navigation__btn">
+                <a class="navigation__btn-link navigation__btn-link--hero" href="#about-us"></a>
               </li>
-              <li class="navigation__btn navigation__btn--hero">
-                <a class="navigation__btn-link" data-goto=".locations" href="#"></a>
+              <li class="navigation__btn">
+                <a class="navigation__btn-link navigation__btn-link--hero" href="#locations"></a>
               </li>
-              <li class="navigation__btn navigation__btn--hero">
-                <a class="navigation__btn-link" data-goto=".contacts" href="#"></a>
+              <li class="navigation__btn">
+                <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
               </li>
 
-              <div class="navigation__menu-wrapper">
-                <ul id="menuItems" class="navigation__menu">
-                  <li class="navigation__item">
-                    <a class="navigation__link" data-goto=".about-armenia" href="#">
-                      Об Армении
-                    </a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" data-goto=".offer" href="#">
-                      Туры
-                    </a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" data-goto=".about-us" href="#">
-                      О нас
-                    </a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" data-goto=".locations" href="#">
-                      Галерея
-                    </a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" data-goto=".contacts" href="#">
-                      Контакты
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </ul>
+              <ul class="navigation__menu">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#about-armenia">
+                    Об Армении
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#offer">
+                    Туры
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#about-us">
+                    О нас
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#locations">
+                    Галерея
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#contacts">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
           </nav>
         </div>
       </section>
   </div>
-  <section class="about-armenia">
+  <section class="about-armenia" id="about-armenia">
     <h2 class="heading about-armenia__heading">Об Армении</h2>
     <div class="container">
       <div class="about-armenia__inner">
@@ -150,7 +147,7 @@
       </div>
     </div>
   </section>
-  <section class="offer">
+  <section class="offer" id="offer">
     <h2 class="heading offer__heading">Наши предложения</h2>
     <div class="container">
       <h3 class="title offer__title">Колоритные туры</h3>
@@ -334,7 +331,7 @@
       <a class="home-btn offer__home-btn" href="#"></a>
     </div>
   </section>
-  <section class="about-us">
+  <section class="about-us" id="about-us">
     <h2 class="heading about-us__heading">О нас</h2>
     <div class="container">
       <p class="about-us__description">
@@ -380,7 +377,7 @@
       <a class="home-btn about-us__home-btn" href="#"></a>
     </div>
   </section>
-  <section class="locations">
+  <section class="locations" id="locations">
     <h2 class="heading locations__heading">Впечатляющие локации</h2>
     <div class="container">
       <div class="locations__inner">
@@ -404,7 +401,7 @@
   </section>
 
   <div class="bottom-wrapper">
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="heading contacts__heading">Контакты</h2>
       <div class="container">
         <div class="contacts__info-block">

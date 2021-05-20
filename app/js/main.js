@@ -1,36 +1,62 @@
-"use strict";
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on("click", function (event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        }
+      );
+    } // End if
+  });
+});
+
+// "use strict";
 // === scroll on click ===
 
-const menuLinks = document.querySelectorAll(".navigation__btn-link[data-goto]");
-if (menuLinks.length > 0) {
-  menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener("click", onMenuLinkClick);
-  });
+// const menuLinks = document.querySelectorAll(".navigation__btn-link[data-goto]");
+// if (menuLinks.length > 0) {
+//   menuLinks.forEach((menuLink) => {
+//     menuLink.addEventListener("click", onMenuLinkClick);
+//   });
 
-  function onMenuLinkClick(e) {
-    const menuLink = e.target;
-    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-      const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue =
-        gotoBlock.getBoundingClientRect().top + pageYOffset;
+//   function onMenuLinkClick(e) {
+//     const menuLink = e.target;
+//     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+//       const gotoBlock = document.querySelector(menuLink.dataset.goto);
+//       const gotoBlockValue =
+//         gotoBlock.getBoundingClientRect().top + pageYOffset;
 
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: "smooth",
-      });
+//       window.scrollTo({
+//         top: gotoBlockValue,
+//         behavior: "smooth",
+//       });
 
-      e.preventDefault();
-    }
-  }
-}
+//       e.preventDefault();
+//     }
+//   }
+// }
+// ==========================================================================================================
 // if menu opened (contains class _active), in this moment we shall remove all classes, that been added to open menu
 // if (iconMenu.classList.contains("_active")) {
 //   document.body.classList.remove("_lock");
 //   iconMenu.classList.remove("_active");
 //   menuBody.classList.remove("_active");
 // }
-
-
 
 // === / scroll on click ===
 // === following code helps to detect on which device the page being browsed ===
