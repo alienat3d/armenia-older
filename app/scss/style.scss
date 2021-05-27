@@ -53,6 +53,25 @@
   }
 }
 
+.next-screen-scroll,
+.next-screen-scroll--bright, 
+.next-screen-scroll--very-bright, 
+.prev-screen-scroll,
+.prev-screen-scroll--bright, 
+.prev-screen-scroll--very-bright {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  min-height: 100%;
+  z-index: 5;
+}
+.prev-screen-scroll,
+.prev-screen-scroll--bright,
+.prev-screen-scroll--very-bright {
+  left: 0;
+}
 // === BUTTON ===
 // .button {
 //   border: 2px solid #10ea67;
@@ -72,7 +91,7 @@
   &__buttons-bar {
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 2.5%;
     transform: translateY(-60%);
     transition: all 0.3s ease 0s;
     padding-left: 15px;
@@ -92,87 +111,6 @@
       transform: translateY(42%);
     }
   }
-  // === menu showing animation ===
-  &__buttons-bar:hover &__menu,
-  &__buttons-bar:hover &__item,
-  &__buttons-bar:hover &__link,
-  &__buttons-bar:hover &__menu::before {
-    display: block;
-
-    -webkit-animation: fadeInFromNone 0.5s ease-out;
-    -moz-animation: fadeInFromNone 0.5s ease-out;
-    -o-animation: fadeInFromNone 0.5s ease-out;
-    animation: fadeInFromNone 0.5s ease-out;
-  }
-
-  @-webkit-keyframes fadeInFromNone {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-
-    1% {
-      display: block;
-      opacity: 0;
-    }
-
-    100% {
-      display: block;
-      opacity: 1;
-    }
-  }
-
-  @-moz-keyframes fadeInFromNone {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-
-    1% {
-      display: block;
-      opacity: 0;
-    }
-
-    100% {
-      display: block;
-      opacity: 1;
-    }
-  }
-
-  @-o-keyframes fadeInFromNone {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-
-    1% {
-      display: block;
-      opacity: 0;
-    }
-
-    100% {
-      display: block;
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeInFromNone {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-
-    1% {
-      display: block;
-      opacity: 0;
-    }
-
-    100% {
-      display: block;
-      opacity: 1;
-    }
-  }
-  // === / menu showing animation ===
   &__buttons-bar:hover &__link {
     display: inline-flex;
   }
@@ -383,6 +321,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    margin-right: 5px;
   }
 
   &__description {
@@ -455,13 +394,19 @@
     right: 233px;
     z-index: 1;
   }
+
   &__video-cover-play {
+    position: absolute;
     width: 58px;
     height: 58px;
-    position: absolute;
     top: 215px;
     left: -33px;
+    border-radius: 50%;
+    transition: .5s;
     z-index: 2;
+    &:hover{
+      transform: scale(1.10);
+    }
   }
 
   &__video-background {
@@ -795,7 +740,8 @@
 }
 
 .bottom-wrapper {
-  min-height: 900px;
+  position: relative;
+  min-height: 100vh;
   background-image: url("../images/contacts-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;

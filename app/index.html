@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="hero-wrapper">
+  <div class="hero-wrapper" id="hero">
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -112,6 +112,7 @@
               </ul>
           </nav>
         </div>
+        <a class="next-screen-scroll--bright" href="#about-armenia"></a>
       </section>
   </div>
   <section class="about-armenia" id="about-armenia">
@@ -141,7 +142,7 @@
         <div class="about-armenia__pictures">
           <a class="about-armenia__video-link" data-fancybox href="https://youtu.be/XO5KNNgfd_U">
             <img class="about-armenia__video-cover" src="images/video-cover.jpg" alt="картинка видео">
-            <img class="about-armenia__video-cover-play" src="images/icons/play-button-round.png">
+            <img class="about-armenia__video-cover-play wave" src="images/icons/play-button-round.png">
           </a>
           <img class="about-armenia__video-background" src="images/video-cover-background.jpg"
             alt="картинка задник для видео">
@@ -196,6 +197,8 @@
           </ul>
       </nav>
     </div>
+    <a class="prev-screen-scroll" href="#hero"></a>
+    <a class="next-screen-scroll" href="#offer"></a>
   </section>
   <section class="offer" id="offer">
     <h2 class="heading offer__heading">Наши предложения</h2>
@@ -425,7 +428,11 @@
           </ul>
       </nav>
       <a class="home-btn offer__home-btn" href="#"></a>
+      <a class="prev-screen-scroll--very-bright" href="#about-armenia"></a>
+      <a class="next-screen-scroll--very-bright" href="#about-us"></a>
     </div>
+    <a class="prev-screen-scroll" href="#about-armenia"></a>
+    <a class="next-screen-scroll" href="#about-us"></a>
   </section>
   <section class="about-us" id="about-us">
     <h2 class="heading about-us__heading">О нас</h2>
@@ -470,7 +477,6 @@
           </div>
         </div>
       </div>
-
       <nav class="navigation">
         <ul class="navigation__buttons-bar navigation__buttons-bar--about-us">
           <li class="navigation__btn">
@@ -488,7 +494,6 @@
           <li class="navigation__btn">
             <a class="navigation__btn-link navigation__btn-link--about-us wave" href="#contacts"></a>
           </li>
-
           <ul class="navigation__menu">
             <li class="navigation__item">
               <a class="navigation__link" href="#about-armenia">Об Армении
@@ -519,6 +524,8 @@
       </nav>
       <a class="home-btn about-us__home-btn" href="#"></a>
     </div>
+    <a class="prev-screen-scroll--bright" href="#offer"></a>
+    <a class="next-screen-scroll--bright" href="#locations"></a>
   </section>
   <section class="locations" id="locations">
     <h2 class="heading locations__heading">Впечатляющие локации</h2>
@@ -592,6 +599,8 @@
       </nav>
       <a class="home-btn locations__home-btn" href="#"></a>
     </div>
+    <a class="prev-screen-scroll" href="#about-us"></a>
+    <a class="next-screen-scroll" href="#contacts"></a>
   </section>
 
   <div class="bottom-wrapper">
@@ -748,6 +757,7 @@
         </div>
       </div>
     </footer>
+    <a class="prev-screen-scroll--very-bright" href="#locations"></a>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

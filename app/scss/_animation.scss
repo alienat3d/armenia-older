@@ -6,7 +6,149 @@
   animation-iteration-count: infinite;
 }
 @keyframes wave {
-  0% {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
-  100% {box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0);}
+  0% {
+    box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0);
+  }
+}
+
+.wave5s {
+  animation-name: wave;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0);
+  }
 }
 // === / WAVE ANIMATION ===
+
+// === / FLASHING ANIMATION ===
+.next-screen-scroll,
+.prev-screen-scroll {
+  animation: flashing 4.5s linear 15s infinite alternate;
+}
+@keyframes flashing {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(#fff, .05);
+  }
+}
+.next-screen-scroll--bright,
+.prev-screen-scroll--bright {
+    animation: flashing-bright 4.5s linear 15s infinite alternate;
+}
+@keyframes flashing-bright {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(#fff, .2);
+  }
+}
+.next-screen-scroll--very-bright,
+.prev-screen-scroll--very-bright {
+    animation: flashing-very-bright 4.5s linear 15s infinite alternate;
+}
+@keyframes flashing-very-bright {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(#fff, .3);
+  }
+}
+// === / FLASHING ANIMATION ===
+
+// === MENU SHOWING ANIMATION ===
+.navigation {
+  &__buttons-bar:hover &__menu,
+  &__buttons-bar:hover &__item,
+  &__buttons-bar:hover &__link,
+  &__buttons-bar:hover &__menu::before {
+    display: block;
+
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    animation: fadeInFromNone 0.5s ease-out;
+  }
+
+  @-webkit-keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+// === / MENU SHOWING ANIMATION ===
