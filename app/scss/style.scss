@@ -75,6 +75,21 @@
     transform: translateY(-60%);
     transition: all 0.3s ease 0s;
     padding-left: 15px;
+    &--about-armenia {
+      transform: translateY(-20%);
+    }
+    &--offer {
+      transform: translateY(-198%);
+    }
+    &--about-us {
+      transform: translateY(-119%);
+    }
+    &--locations {
+      transform: translateY(-53%);
+    }
+    &--contacts {
+      transform: translateY(42%);
+    }
   }
   // === menu showing animation ===
   &__buttons-bar:hover &__menu,
@@ -167,7 +182,22 @@
     margin-bottom: 25px;
     transition: all, 0.3s;
     &--hero {
-      background-color: rgba(#5f6325, 0.8);
+      background-color: rgba(#5f6325, .8);
+    }
+    &--about-armenia {
+      background-color: #288C26;
+    }
+    &--offer {
+      background-color: #E1B990;
+    }
+    &--about-us {
+      background-color: #2f2f2f;
+    }
+    &--locations {
+      background-color: #288C26;
+    }
+    &--contacts {
+      background-color: #90AE95;
     }
   }
   &__menu {
@@ -190,6 +220,8 @@
     transform: translate(12%, -60%);
     width: 254px;
     height: 310px;
+  }
+  &__menu--hero::before {
     background: linear-gradient(
       271.44deg,
       #c4e3cb 1.34%,
@@ -197,6 +229,7 @@
     );
     filter: blur(20px);
   }
+
   &__item {
     padding-bottom: 15px;
     text-align: right;
@@ -207,8 +240,16 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 19px;
+    color: #fff;
+  }
+  &__link--disabled {
+    cursor: default;
+    opacity: .5;
+  }
+  &__link--hero {
     color: #000;
   }
+
   &__link-btn {
     display: inline;
     height: 17px;
@@ -399,6 +440,10 @@
     position: relative;
   }
 
+  &__video-link{
+    display: block;
+  }
+
   &__video-cover {
     width: 504px;
     height: 327px;
@@ -460,7 +505,7 @@
   }
 
   &__title {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     padding-bottom: 22px;
@@ -665,6 +710,7 @@
     left: -7px;
   }
 }
+
 .locations {
   position: relative;
   background-color: #1e7e1c;
@@ -684,14 +730,14 @@
   }
   &__inner-background::before {
     content: "";
-    width: 1638px;
+    position: absolute;
+    top: 0;
+    left: -6%;
+    width: 1297px;
     height: 734px;
     border-radius: 5px;
     background-image: url("../images/gallery/background.jpg");
     opacity: 0.45;
-    position: absolute;
-    top: 0;
-    left: -179px;
   }
   &__top {
     width: 1148px;
@@ -704,6 +750,36 @@
   &__link-picture {
     border-radius: 2px;
     filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.27));
+
+    &--church-text {
+      position: absolute;
+      top: 26%;
+      left: 65%;
+      font-weight: 600;
+      font-size: 37px;
+      line-height: 45px;
+      color: #000;
+      z-index: 2;
+    }
+    &--church-text::before {
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 29%;
+      width: 66px;
+      height: 1.5px;
+      background-color: #000;
+      z-index: 2;
+    }
+  }
+
+  &__link-picture--filter {
+    position: absolute;
+    top: 6%;
+    width: 464px;
+    height: 322px;
+    background-color: rgba(#fff, 0.85);
+    z-index: 1;
   }
 
   &__bottom {
@@ -716,12 +792,14 @@
     margin-bottom: -44px;
   }
 }
+
 .bottom-wrapper {
   min-height: 900px;
   background-image: url("../images/contacts-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .contacts {
   position: relative;
   margin-bottom: 72px;
@@ -868,6 +946,10 @@
     line-height: 12px;
   }
 
+  &__center-wrapper {
+    min-width: 400px;
+  }
+
   &__form {
     margin: auto 0;
   }
@@ -888,7 +970,7 @@
 
   &__input {
     resize: none;
-    width: 256px;
+    width: 300px;
     background-color: transparent;
     font-weight: 400;
     font-size: 9px;
@@ -915,6 +997,48 @@
     border-radius: 2px;
     background-color: rgba($green, 0.2);
     cursor: pointer;
+  }
+
+  &__authors {
+    margin-top: 20px;
+  }
+
+  &__authors-link {
+    position: relative;
+    display: inline-block;
+    margin-left: 34px;
+  }
+  &__authors-link:hover &__authors-img {
+    transform: scale(1.25);
+  }
+  &__authors-link:hover &__authors-name span {
+    border-bottom: 1px solid $green;
+  }
+
+  &__authors-img {
+    position: absolute;
+    top: 6%;
+    right: 95%;
+    width: 38px;
+    height: 38px;
+    transition: all 0.5s;
+  }
+
+  &__authors-name {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    width: 150px;
+    margin: 0 20px;
+  }
+
+  &__authors-name span {
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    padding-bottom: 4px;
+    transition: all 0.5s;
+    font-weight: 500;
   }
 
   &__right-side {

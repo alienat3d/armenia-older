@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/needpopup.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -82,29 +83,29 @@
                 <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
               </li>
 
-              <ul class="navigation__menu">
+              <ul class="navigation__menu navigation__menu--hero">
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#about-armenia">Об Армении
+                  <a class="navigation__link navigation__link--hero" href="#about-armenia">Об Армении
                     <div class="navigation__link-btn"></div>
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#offer">Туры
+                  <a class="navigation__link navigation__link--hero" href="#offer">Туры
                     <div class="navigation__link-btn"></div>
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#about-us">О нас
+                  <a class="navigation__link navigation__link--hero" href="#about-us">О нас
                     <div class="navigation__link-btn"></div>
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#locations">Галерея
+                  <a class="navigation__link navigation__link--hero" href="#locations">Галерея
                     <div class="navigation__link-btn"></div>
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#contacts">Контакты
+                  <a class="navigation__link navigation__link--hero" href="#contacts">Контакты
                     <div class="navigation__link-btn"></div>
                   </a>
                 </li>
@@ -138,34 +139,37 @@
           <a class="home-btn about-armenia__home-btn" href="#"></a>
         </div>
         <div class="about-armenia__pictures">
-          <img class="about-armenia__video-cover" src="images/video-cover.jpg" alt="картинка видео">
-          <img class="about-armenia__video-cover-play" src="images/icons/play-button-round.png">
+          <a class="about-armenia__video-link" data-fancybox href="https://youtu.be/XO5KNNgfd_U">
+            <img class="about-armenia__video-cover" src="images/video-cover.jpg" alt="картинка видео">
+            <img class="about-armenia__video-cover-play" src="images/icons/play-button-round.png">
+          </a>
           <img class="about-armenia__video-background" src="images/video-cover-background.jpg"
             alt="картинка задник для видео">
           <div class="about-armenia__video-background-grey-filter"></div>
         </div>
       </div>
       <nav class="navigation">
-        <ul class="navigation__buttons-bar">
+        <ul class="navigation__buttons-bar navigation__buttons-bar--about-armenia">
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-armenia"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-armenia" href="#about-armenia"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#offer"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-armenia" href="#offer"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-us"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-armenia" href="#about-us"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#locations"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-armenia" href="#locations"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-armenia" href="#contacts"></a>
           </li>
 
           <ul class="navigation__menu">
             <li class="navigation__item">
-              <a class="navigation__link" href="#about-armenia">Об Армении
+              <a class="navigation__link navigation__link--disabled" href="#about-armenia">
+                Об Армении
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -375,21 +379,21 @@
         </div>
       </div>
       <nav class="navigation">
-        <ul class="navigation__buttons-bar">
+        <ul class="navigation__buttons-bar navigation__buttons-bar--offer">
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-armenia"></a>
+            <a class="navigation__btn-link navigation__btn-link--offer" href="#about-armenia"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#offer"></a>
+            <a class="navigation__btn-link navigation__btn-link--offer" href="#offer"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-us"></a>
+            <a class="navigation__btn-link navigation__btn-link--offer" href="#about-us"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#locations"></a>
+            <a class="navigation__btn-link navigation__btn-link--offer" href="#locations"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
+            <a class="navigation__btn-link navigation__btn-link--offer" href="#contacts"></a>
           </li>
 
           <ul class="navigation__menu">
@@ -399,7 +403,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#offer">Туры
+              <a class="navigation__link navigation__link--disabled" href="#offer">Туры
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -466,22 +470,23 @@
           </div>
         </div>
       </div>
+
       <nav class="navigation">
-        <ul class="navigation__buttons-bar">
+        <ul class="navigation__buttons-bar navigation__buttons-bar--about-us">
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-armenia"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-us" href="#about-armenia"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#offer"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-us" href="#offer"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-us"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-us" href="#about-us"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#locations"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-us" href="#locations"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
+            <a class="navigation__btn-link navigation__btn-link--about-us" href="#contacts"></a>
           </li>
 
           <ul class="navigation__menu">
@@ -496,7 +501,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#about-us">О нас
+              <a class="navigation__link navigation__link--disabled" href="#about-us">О нас
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -523,8 +528,12 @@
           <div class="locations__top">
             <a class="locations__link" href="#"><img class="locations__link-picture" src="images/gallery/stones.jpg"
                 alt="загадочные камни"></a>
-            <a class="locations__link" href="#"><img class="locations__link-picture" src="images/gallery/chirch.jpg"
-                alt="заброшенная церковь"></a>
+            <a class="locations__link" href="#">
+              <img class="locations__link-picture locations__link-picture--church" src="images/gallery/chirch.jpg"
+                alt="заброшенная церковь">
+              <div class="locations__link-picture--filter"></div>
+              <p class="locations__link-picture--church-text">Галерея</p>
+            </a>
           </div>
           <div class="locations__bottom">
             <a class="locations__link" href="#"><img class="locations__link-picture"
@@ -534,22 +543,23 @@
           </div>
         </div>
       </div>
+
       <nav class="navigation">
-        <ul class="navigation__buttons-bar">
+        <ul class="navigation__buttons-bar navigation__buttons-bar--locations">
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-armenia"></a>
+            <a class="navigation__btn-link navigation__btn-link--locations" href="#about-armenia"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#offer"></a>
+            <a class="navigation__btn-link navigation__btn-link--locations" href="#offer"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-us"></a>
+            <a class="navigation__btn-link navigation__btn-link--locations" href="#about-us"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#locations"></a>
+            <a class="navigation__btn-link navigation__btn-link--locations" href="#locations"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
+            <a class="navigation__btn-link navigation__btn-link--locations" href="#contacts"></a>
           </li>
 
           <ul class="navigation__menu">
@@ -569,7 +579,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#locations">Галерея
+              <a class="navigation__link--disabled navigation__link" href="#locations">Галерея
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -634,22 +644,23 @@
           <input class="contacts__form-button" type="submit" value="Отправить">
         </form>
       </div>
+
       <nav class="navigation">
-        <ul class="navigation__buttons-bar">
+        <ul class="navigation__buttons-bar navigation__buttons-bar--contacts">
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-armenia"></a>
+            <a class="navigation__btn-link navigation__btn-link--contacts" href="#about-armenia"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#offer"></a>
+            <a class="navigation__btn-link navigation__btn-link--contacts" href="#offer"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#about-us"></a>
+            <a class="navigation__btn-link navigation__btn-link--contacts" href="#about-us"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#locations"></a>
+            <a class="navigation__btn-link navigation__btn-link--contacts" href="#locations"></a>
           </li>
           <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--hero" href="#contacts"></a>
+            <a class="navigation__btn-link navigation__btn-link--contacts" href="#contacts"></a>
           </li>
 
           <ul class="navigation__menu">
@@ -674,7 +685,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#contacts">Контакты
+              <a class="navigation__link navigation__link--disabled" href="#contacts">Контакты
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -695,14 +706,26 @@
               mrsguide77@gmail.com
             </p>
           </div>
-          <form class="footer__form">
-            <h4 class="footer__form-title">
-              Подписаться на рассылку
-            </h4>
-            <p class="footer__form-subtitle">Оповещения о новых турах по горячим ценам</p>
-            <input class="footer__input" type="text" placeholder="Введите e-mail">
-            <button class="footer__button" type="submit">Подписаться</button>
-          </form>
+          <div class="footer__center-wrapper">
+            <form class="footer__form">
+              <h4 class="footer__form-title">
+                Подписаться на рассылку
+              </h4>
+              <p class="footer__form-subtitle">Оповещения о новых турах по горячим ценам</p>
+              <input class="footer__input" type="text" placeholder="Введите e-mail">
+              <button class="footer__button" type="submit">Подписаться</button>
+            </form>
+            <div class="footer__authors">
+              <a class="footer__authors-link" href="https://freelance.ru/rimma0226">
+                <img class="footer__authors-img" src="images/icons/design.png" alt="иконка веб-дизайн">
+                <p class="footer__authors-name">Идея и дизайн: <span>Римма Чобанян</span></p>
+              </a>
+              <a class="footer__authors-link" href="mailto:al.tsaplin@gmail.com">
+                <img class="footer__authors-img" src="images/icons/coding.png" alt="иконка веб-разработка">
+                <p class="footer__authors-name">Веб-разработка: <span>Алексей Цаплин</span></p>
+              </a>
+            </div>
+          </div>
           <div class="footer__right-side">
             <div class="footer__social-wrapper">
               <div class="social footer__social">
@@ -728,6 +751,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/needpopup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
