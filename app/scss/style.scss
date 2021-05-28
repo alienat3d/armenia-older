@@ -52,12 +52,12 @@
     line-height: 18px;
   }
 }
-
+// === CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
 .next-screen-scroll,
-.next-screen-scroll--bright, 
-.next-screen-scroll--very-bright, 
+.next-screen-scroll--bright,
+.next-screen-scroll--very-bright,
 .prev-screen-scroll,
-.prev-screen-scroll--bright, 
+.prev-screen-scroll--bright,
 .prev-screen-scroll--very-bright {
   display: block;
   position: absolute;
@@ -72,7 +72,9 @@
 .prev-screen-scroll--very-bright {
   left: 0;
 }
-// === BUTTON ===
+// === / CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
+
+// === FLYING TEST BUTTON ===
 // .button {
 //   border: 2px solid #10ea67;
 //   border-radius: 100px;
@@ -84,7 +86,7 @@
 //   color: #fff;
 //   transform: translateY(-5px);
 // }
-// === / BUTTON ===
+// === / FLYING TEST BUTTON ===
 
 // === NAVIGATION ===
 .navigation {
@@ -121,22 +123,22 @@
     margin-bottom: 25px;
     transition: all, 0.3s;
     &--hero {
-      background-color: rgba(#5f6325, .8);
+      background-color: rgba(#5f6325, 0.8);
     }
     &--about-armenia {
-      background-color: #288C26;
+      background-color: #288c26;
     }
     &--offer {
-      background-color: #E1B990;
+      background-color: #e1b990;
     }
     &--about-us {
       background-color: #2f2f2f;
     }
     &--locations {
-      background-color: #288C26;
+      background-color: #288c26;
     }
     &--contacts {
-      background-color: #90AE95;
+      background-color: #90ae95;
     }
   }
   &__menu {
@@ -183,7 +185,7 @@
   }
   &__link--disabled {
     cursor: default;
-    opacity: .5;
+    opacity: 0.5;
   }
   &__link--hero {
     color: #000;
@@ -199,8 +201,10 @@
     margin-left: 8px;
   }
 }
+
 .hero {
   padding-bottom: 80px;
+
   &__title {
     margin-bottom: 44px;
     background-image: url("../images/armenia.png");
@@ -208,6 +212,7 @@
     background-size: contain;
     background-position: center;
   }
+
   &__title-word {
     color: transparent;
     font-weight: 300;
@@ -216,12 +221,14 @@
     min-width: 100%;
     letter-spacing: 45px;
   }
+
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 170px;
   }
+
   &__text {
     font-size: 14px;
     line-height: 17px;
@@ -229,53 +236,91 @@
     border-left: 1px solid $green;
     padding-left: 7px;
   }
+  &__button-icon {
+    margin-right: 14px;
+    transition: 0.5s ease-in-out;
+  }
   &__button {
     position: relative;
-    width: 254px;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-width: 254px;
     height: 60px;
     border: 2px solid $green;
     border-radius: 2px;
-    background-color: rgba($green, 0.2);
+    background-color: transparent;
     display: flex;
     align-items: center;
     padding: 16px 44px;
     font-size: 16px;
     line-height: 20px;
-    // ------------
-    // position: relative;
-    // display: block;
-    // overflow: hidden;
-    // width: 254px;
-    // height: 60px;
-    // border: 2px solid $green;
-    // border-radius: 2px;
-    // background-color: rgba($green, 0.2);
-    // align-items: center;
-    // padding: 16px 44px;
-    // font-size: 16px;
-    // line-height: 20px;
+  }
+  &__button::before {
+    content: "";
+    position: absolute;
+    border-bottom: 60px solid rgba($green, 0.2);
+    right: -60px;
+    border-right: 60px solid transparent;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+  }
+  &__button::after {
+    content: "";
+    position: absolute;
+    border-bottom: 60px solid rgba($green, 0.2);
+    left: -60px;
+    border-left: 60px solid transparent;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+  }
+  &__button::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__button::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__button:hover {
+    outline: 0;
+  }
+  &__button:hover &__button-icon,
+  &__button:hover &__button-text {
+    z-index: 3;
+  }
+  &__button:hover &__button-icon {
+    path {
+      fill: #fff;
+    }
+  }
+  &__button:hover::before {
+    transform: translateX(0);
+  }
+  &__button:hover::after {
+    transform: translateX(0);
   }
 
-  &__button-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 14px;
-  }
   &__navigation-menu {
     position: absolute;
     top: 36px;
     right: 55px;
   }
+
   &__navigation-item {
     background-color: #288c26;
   }
 }
+
 .social {
   width: 134px;
   height: 20px;
   display: flex;
   justify-content: space-between;
 }
+
 .heading {
   font-weight: 700;
   font-size: 60px;
@@ -284,6 +329,7 @@
   position: relative;
   text-align: center;
 }
+
 .heading::before,
 .heading::after {
   content: "";
@@ -292,26 +338,32 @@
   width: 35%;
   top: 125px;
 }
+
 .heading::before {
   left: 0;
 }
+
 .heading::after {
   right: 0;
 }
+
 .title {
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
 }
+
 .home-btn {
   width: 29px;
   height: 29px;
   background-image: url("../images/icons/home.svg");
 }
+
 .about-armenia {
+  position: relative;
+  min-height: 100vh;
   background-color: #1e7e1c;
   text-align: center;
-  position: relative;
 
   &__heading::before,
   &__heading::after {
@@ -380,7 +432,7 @@
     position: relative;
   }
 
-  &__video-link{
+  &__video-link {
     display: block;
   }
 
@@ -402,10 +454,10 @@
     top: 215px;
     left: -33px;
     border-radius: 50%;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 2;
-    &:hover{
-      transform: scale(1.10);
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -514,6 +566,7 @@
 
 .offer {
   position: relative;
+  min-height: 100vh;
   background-image: url("../images/offer-background.jpg");
   min-height: 900px;
   background-attachment: fixed;
@@ -544,6 +597,7 @@
 }
 .about-us {
   position: relative;
+  min-height: 100vh;
   background-color: #000;
   padding-bottom: 60px;
   &__heading::before,
@@ -658,6 +712,7 @@
 }
 
 .locations {
+  min-height: 100vh;
   position: relative;
   background-color: #1e7e1c;
   padding-bottom: 80px;
