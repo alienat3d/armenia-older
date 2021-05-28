@@ -831,10 +831,20 @@
 
   &__info-icon {
     margin-right: 15px;
+    transition: .5s ease-in-out;
   }
   &__item-textbox {
     display: flex;
     flex-direction: column;
+  }
+  &__info-link{
+    display: inline-block;
+  }
+  &__info-link + &__info-link {
+    margin-left: -90px;
+  }
+  &__info-link:hover &__info-icon{
+    transform: scale(1.15);
   }
   &__info-title {
     font-weight: 600;
@@ -846,8 +856,12 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 19px;
+    border-bottom: 1px solid transparent;
+    transition: .5s ease-in-out;
   }
-
+&__info-link:hover &__info-text{
+    border-bottom: 1px solid #fff;
+  }
   &__form {
     width: 100%;
     min-height: 312px;
