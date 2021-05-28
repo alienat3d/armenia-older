@@ -594,9 +594,22 @@
   }
 
   &__colorful-tours {
+  position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+  }
+
+  &__link-more{
+    position: absolute;
+    bottom: -10%;
+    right: 46%;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $default;
+    border-bottom: 1px solid $default;
   }
 }
 .about-us {
