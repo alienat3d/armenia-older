@@ -152,3 +152,30 @@
   }
 }
 // === / MENU SHOWING ANIMATION ===
+
+// === PICTURE FLASHING ===
+.flashing-pics{
+  transition: .5s ease-in-out;
+}
+
+.flashing-pics:hover {
+  opacity: 1;
+	animation: flash 2s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+// === / PICTURE FLASHING ===

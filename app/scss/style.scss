@@ -357,10 +357,10 @@
   width: 29px;
   height: 29px;
   background-image: url("../images/icons/home.svg");
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.home-btn:hover{
-  transform: scale(1.10);
+.home-btn:hover {
+  transform: scale(1.1);
 }
 
 .about-armenia {
@@ -594,13 +594,13 @@
   }
 
   &__colorful-tours {
-  position: relative;
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
   }
 
-  &__link-more{
+  &__link-more {
     position: absolute;
     bottom: -10%;
     right: 46%;
@@ -756,7 +756,7 @@
     border-radius: 5px;
     background-image: url("../images/gallery/background.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     opacity: 0.45;
   }
   &__top {
@@ -800,6 +800,16 @@
     height: 322px;
     background-color: rgba(#fff, 0.85);
     z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+  &__link:hover &__link-picture--filter {
+    background-color: transparent;
+  }
+  &__link:hover &__link-picture--church-text {
+    color: #fff;
+  }
+  &__link:hover &__link-picture--church-text::before {
+    background-color: #fff;
   }
 
   &__bottom {
@@ -846,19 +856,19 @@
 
   &__info-icon {
     margin-right: 15px;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   &__item-textbox {
     display: flex;
     flex-direction: column;
   }
-  &__info-link{
+  &__info-link {
     display: inline-block;
   }
   &__info-link + &__info-link {
     margin-left: -90px;
   }
-  &__info-link:hover &__info-icon{
+  &__info-link:hover &__info-icon {
     transform: scale(1.15);
   }
   &__info-title {
@@ -872,9 +882,9 @@
     font-size: 13px;
     line-height: 19px;
     border-bottom: 1px solid transparent;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
-&__info-link:hover &__info-text{
+  &__info-link:hover &__info-text {
     border-bottom: 1px solid #fff;
   }
   &__form {
@@ -941,9 +951,9 @@
     border: 4px solid $green;
     border-radius: 2.3px;
     cursor: pointer;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
-  &__form-button:hover{
+  &__form-button:hover {
     background-color: rgba($green, 0.2);
   }
 }
