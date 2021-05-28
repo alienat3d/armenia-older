@@ -741,7 +741,9 @@
     width: 1297px;
     height: 734px;
     border-radius: 5px;
-    background-image: url("../images/gallery/background.jpg");
+    background-image: url("../images/gallery/background-2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
     opacity: 0.45;
   }
   &__top {
