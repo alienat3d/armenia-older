@@ -15,12 +15,12 @@
 }
 
 .wave5s {
-  animation-name: wave;
-  animation-duration: 2.5s;
+  animation-name: wave5s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-@keyframes wave {
+@keyframes wave5s {
   0% {
     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
   }

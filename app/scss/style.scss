@@ -319,6 +319,34 @@
   height: 20px;
   display: flex;
   justify-content: space-between;
+  // FIXME: later play around with it
+  // &__img {
+  //   position: relative;
+  //   box-shadow: 0 0 0 4px #fff;
+  //   transition: color 0.3s;
+  //   z-index: 3;
+  // }
+  // &__img::after {
+  //   transform: scale(1.3);
+  //   opacity: 0;
+  //   top: -2px;
+  //   left: -2px;
+  //   padding: 2px;
+  //   z-index: -1;
+  //   background: #fff;
+  //   transition: transform 0.2s, opacity 0.3s;
+  //   pointer-events: none;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   border-radius: 50%;
+  //   content: "";
+  //   box-sizing: content-box;
+  // }
+  // &__img:hover::after {
+  //   transform: scale(1);
+  //   opacity: 1;
+  // }
 }
 
 .heading {
