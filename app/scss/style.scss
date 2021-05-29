@@ -113,12 +113,34 @@
       transform: translateY(42%);
     }
   }
-  &__buttons-bar:hover &__link {
+
+  &__buttons-bar:hover &__link,
+  &__buttons-bar:hover &__link--disabled {
     display: inline-flex;
+    transition: all, 0.3s;
   }
   &__buttons-bar:hover .wave {
     animation: none;
   }
+  &__buttons-bar:hover &__btn-link--hero{
+    background-color: rgba(#5f6325, 0);
+  }
+  &__buttons-bar:hover &__btn-link--about-armenia{
+    background-color: rgba(#288c26, 0);
+  }
+  &__buttons-bar:hover &__btn-link--offer{
+    background-color: rgba(#e1b990, 0);
+  }
+  &__buttons-bar:hover &__btn-link--about-us{
+    background-color: rgba(#2f2f2f, 0);
+  }
+  &__buttons-bar:hover &__btn-link--locations{
+    background-color: rgba(#288c26, 0);
+  }
+  &__buttons-bar:hover &__btn-link--contacts{
+    background-color: rgba(#90ae95, 0);
+  }
+
   &__btn-link {
     border-radius: 3px;
     width: 11px;
@@ -156,14 +178,14 @@
   }
   &__menu::before {
     content: "";
-    z-index: -1;
-    position: absolute;
     display: none;
+    position: absolute;
     top: 50%;
     right: 4%;
     transform: translate(12%, -60%);
     width: 254px;
     height: 310px;
+    z-index: -1;
   }
   &__menu--hero::before {
     background: linear-gradient(
@@ -178,6 +200,10 @@
     padding-bottom: 15px;
     text-align: right;
   }
+
+  &__link.navigation__link--hero {
+    color: #000;
+  }
   &__link {
     height: 22px;
     cursor: pointer;
@@ -186,22 +212,33 @@
     line-height: 19px;
     color: #fff;
   }
-  &__link--disabled {
+&__link--disabled span {
+  display: inline-flex;
+  height: 22px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    color: rgba(#fff, .5);
     cursor: default;
-    opacity: 0.5;
   }
-  &__link--hero {
-    color: #000;
-  }
-
   &__link-btn {
-    display: inline;
+    display: inline-flex;
     height: 17px;
     width: 19px;
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 3px;
     margin-left: 8px;
+  }
+  &__link-btn--disabled{
+    display: inline;
+    height: 17px;
+    width: 19px;
+    background-color: rgba(#fff, .5);
+    border: 1px solid rgba(#000, .5);
+    border-radius: 3px;
+    margin-left: 8px;
+    cursor: default;
   }
 }
 
@@ -641,6 +678,10 @@
     line-height: 18px;
     color: $default;
     border-bottom: 1px solid $default;
+  }
+  &__link-more:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
   }
 }
 .about-us {
