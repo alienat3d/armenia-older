@@ -116,6 +116,9 @@
   &__buttons-bar:hover &__link {
     display: inline-flex;
   }
+  &__buttons-bar:hover .wave {
+    animation: none;
+  }
   &__btn-link {
     border-radius: 3px;
     width: 11px;
