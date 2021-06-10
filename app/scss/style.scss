@@ -2,7 +2,6 @@
 @import "reset";
 @import "vars";
 @import "animation";
-@import "media";
 
 .hero-wrapper {
   position: relative;
@@ -12,9 +11,11 @@
   background-size: cover;
   background-position: top;
 }
+
 .header {
   height: 150px;
   margin-bottom: 160px;
+
   &__inner {
     padding: 50px 0 0;
     display: flex;
@@ -22,10 +23,21 @@
     align-items: center;
   }
   &__phone {
+    position: relative;
+    padding-left: 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     color: $dark-green;
+  }
+  &__phone::before{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 2px;
+    background-image: url(../images/icons/header-phone.svg);
   }
   // &__button {
   //   color: #000;
@@ -1029,6 +1041,7 @@
     background-color: rgba($green, 0.2);
   }
 }
+
 .footer {
   min-height: 200px;
   padding: 54px 0;
@@ -1120,47 +1133,47 @@
     cursor: pointer;
   }
 
-  &__authors {
-    margin-top: 20px;
-  }
+  // &__authors {
+  //   margin-top: 20px;
+  // }
 
-  &__authors-link {
-    position: relative;
-    display: inline-block;
-    margin-left: 34px;
-  }
-  &__authors-link:hover &__authors-img {
-    transform: scale(1.25);
-  }
-  &__authors-link:hover &__authors-name span {
-    border-bottom: 1px solid $green;
-  }
+  // &__authors-link {
+  //   position: relative;
+  //   display: inline-block;
+  //   margin-left: 34px;
+  // }
+  // &__authors-link:hover &__authors-img {
+  //   transform: scale(1.25);
+  // }
+  // &__authors-link:hover &__authors-name span {
+  //   border-bottom: 1px solid $green;
+  // }
 
-  &__authors-img {
-    position: absolute;
-    top: 6%;
-    right: 95%;
-    width: 38px;
-    height: 38px;
-    transition: all 0.5s;
-  }
+  // &__authors-img {
+  //   position: absolute;
+  //   top: 6%;
+  //   right: 95%;
+  //   width: 38px;
+  //   height: 38px;
+  //   transition: all 0.5s;
+  // }
 
-  &__authors-name {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-    width: 150px;
-    margin: 0 20px;
-  }
+  // &__authors-name {
+  //   display: inline-block;
+  //   font-weight: 700;
+  //   font-size: 15px;
+  //   line-height: 22px;
+  //   width: 150px;
+  //   margin: 0 20px;
+  // }
 
-  &__authors-name span {
-    border-bottom: 1px solid transparent;
-    text-align: center;
-    padding-bottom: 4px;
-    transition: all 0.5s;
-    font-weight: 500;
-  }
+  // &__authors-name span {
+  //   border-bottom: 1px solid transparent;
+  //   text-align: center;
+  //   padding-bottom: 4px;
+  //   transition: all 0.5s;
+  //   font-weight: 500;
+  // }
 
   &__right-side {
     display: flex;
@@ -1178,3 +1191,5 @@
     line-height: 12px;
   }
 }
+
+@import "media";
