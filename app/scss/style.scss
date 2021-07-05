@@ -417,7 +417,7 @@
 
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
   }
 
   &__inner {
@@ -470,8 +470,8 @@
     transition: all 0.5s;
   }
   &__text-link:hover {
-    color: $default;
-    border-bottom: 1px solid $default;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
   &__text-link:hover:after {
     -webkit-filter: brightness(100%);
@@ -534,7 +534,7 @@
   width: 402px;
   display: flex;
   flex-direction: column;
-  color: $default;
+  color: $white;
   &__image {
     width: 402px;
     height: 262px;
@@ -563,7 +563,7 @@
     margin: 0 auto;
     width: 52px;
     height: 0.5px;
-    background-color: rgba($default, 0.6);
+    background-color: rgba($white, 0.6);
     margin-bottom: 23px;
   }
 
@@ -623,14 +623,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: $secondary;
+  color: $black;
   padding-bottom: 60px;
   &__heading {
     text-align: center;
   }
   &__heading::before,
   &__heading::after {
-    background-color: $secondary;
+    background-color: $black;
     width: 28%;
   }
 
@@ -654,8 +654,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: $default;
-    border-bottom: 1px solid $default;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
   &__link-more:hover {
     color: #000;
@@ -669,7 +669,7 @@
   padding-bottom: 60px;
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
     width: 42%;
   }
 
@@ -788,7 +788,7 @@
   }
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
     width: 24%;
   }
 
@@ -886,7 +886,7 @@
   margin-bottom: 72px;
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
     width: 39%;
   }
   &__info-block {
@@ -947,7 +947,7 @@
 
   &__form-title {
     margin-bottom: 30px;
-    color: $secondary;
+    color: $black;
     font-weight: 700;
     font-size: 34px;
     line-height: 42px;
@@ -1011,7 +1011,7 @@
 .footer {
   min-height: 200px;
   padding: 54px 0;
-  color: $secondary;
+  color: $black;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -1170,15 +1170,12 @@
     height: 32px;
   }
 
-  &__authors-wrapper {
-  }
-
   &__author {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.01em;
-    color: rgba($secondary, 0.55);
+    color: rgba($black, 0.55);
   }
 
   &__author + &__author {
