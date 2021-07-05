@@ -1,6 +1,6 @@
-@import "global";
 @import "reset";
 @import "vars";
+@import "global";
 @import "animation";
 
 .hero-wrapper {
@@ -30,8 +30,8 @@
     line-height: 20px;
     color: $dark-green;
   }
-  &__phone::before{
-    content: '';
+  &__phone::before {
+    content: "";
     position: absolute;
     width: 14px;
     height: 14px;
@@ -135,22 +135,22 @@
   &__buttons-bar:hover .wave {
     animation: none;
   }
-  &__buttons-bar:hover &__btn-link--hero{
+  &__buttons-bar:hover &__btn-link--hero {
     background-color: rgba(#5f6325, 0);
   }
-  &__buttons-bar:hover &__btn-link--about-armenia{
+  &__buttons-bar:hover &__btn-link--about-armenia {
     background-color: rgba(#288c26, 0);
   }
-  &__buttons-bar:hover &__btn-link--offer{
+  &__buttons-bar:hover &__btn-link--offer {
     background-color: rgba(#e1b990, 0);
   }
-  &__buttons-bar:hover &__btn-link--about-us{
+  &__buttons-bar:hover &__btn-link--about-us {
     background-color: rgba(#2f2f2f, 0);
   }
-  &__buttons-bar:hover &__btn-link--locations{
+  &__buttons-bar:hover &__btn-link--locations {
     background-color: rgba(#288c26, 0);
   }
-  &__buttons-bar:hover &__btn-link--contacts{
+  &__buttons-bar:hover &__btn-link--contacts {
     background-color: rgba(#90ae95, 0);
   }
 
@@ -225,13 +225,13 @@
     line-height: 19px;
     color: #fff;
   }
-&__link--disabled span {
-  display: inline-flex;
-  height: 22px;
+  &__link--disabled span {
+    display: inline-flex;
+    height: 22px;
     font-weight: 600;
     font-size: 18px;
     line-height: 19px;
-    color: rgba(#fff, .5);
+    color: rgba(#fff, 0.5);
     cursor: default;
   }
   &__link-btn {
@@ -243,12 +243,12 @@
     border-radius: 3px;
     margin-left: 8px;
   }
-  &__link-btn--disabled{
+  &__link-btn--disabled {
     display: inline;
     height: 17px;
     width: 19px;
-    background-color: rgba(#fff, .5);
-    border: 1px solid rgba(#000, .5);
+    background-color: rgba(#fff, 0.5);
+    border: 1px solid rgba(#000, 0.5);
     border-radius: 3px;
     margin-left: 8px;
     cursor: default;
@@ -365,41 +365,6 @@
   &__navigation-item {
     background-color: #288c26;
   }
-}
-
-.social {
-  width: 134px;
-  height: 20px;
-  display: flex;
-  justify-content: space-between;
-  // FIXME: later play around with it
-  // &__img {
-  //   position: relative;
-  //   box-shadow: 0 0 0 4px #fff;
-  //   transition: color 0.3s;
-  //   z-index: 3;
-  // }
-  // &__img::after {
-  //   transform: scale(1.3);
-  //   opacity: 0;
-  //   top: -2px;
-  //   left: -2px;
-  //   padding: 2px;
-  //   z-index: -1;
-  //   background: #fff;
-  //   transition: transform 0.2s, opacity 0.3s;
-  //   pointer-events: none;
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   border-radius: 50%;
-  //   content: "";
-  //   box-sizing: content-box;
-  // }
-  // &__img:hover::after {
-  //   transform: scale(1);
-  //   opacity: 1;
-  // }
 }
 
 .heading {
@@ -1081,6 +1046,12 @@
     line-height: 12px;
   }
 
+  &__copyright {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
   &__center-wrapper {
     min-width: 400px;
   }
@@ -1181,15 +1152,37 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  &__social-wrapper {
-    display: flex;
-    justify-content: flex-end;
+
+  &__social {
+    text-align: right;
   }
 
-  &__copyright {
+  &__social-link {
+    display: inline-block;
+  }
+
+  &__social-link + &__social-link {
+    margin-left: 10px;
+  }
+
+  &__social-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__authors-wrapper {
+  }
+
+  &__author {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+    letter-spacing: 0.01em;
+    color: rgba($secondary, 0.55);
+  }
+
+  &__author + &__author {
+    margin-top: 6px;
   }
 }
 
