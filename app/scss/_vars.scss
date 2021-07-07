@@ -1,4 +1,4 @@
-// Color Variables
+// === COLOR VARIABLES ===
 $white: #fff;
 $black: #000;
 
@@ -8,6 +8,13 @@ $dark-green: #394F28;
 $dark-green-card: #3A540E;
 $grey: #BDBDBD;
 $light-gray: #919191;
+// === / COLOR VARIABLES ===
 
-// Font Variables
+// === FONT VARIABLES ===
 $main-font: 'Montserrat', sans-serif;
+// === / FONT VARIABLES ===
+
+// === TRANSITION ===
+$transition-fast: all .3s ease-in-out;
+$transition: all .5s ease-in-out;
+// === / TRANSITION ===
