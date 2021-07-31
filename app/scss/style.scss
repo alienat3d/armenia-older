@@ -857,6 +857,7 @@
   background-repeat: no-repeat;
 }
 
+// === CONTACTS ===
 .contacts {
   position: relative;
   margin-bottom: 72px;
@@ -984,14 +985,18 @@
   }
 }
 
+
+// === FOOTER ===
 .footer {
   min-height: 200px;
   padding: 54px 0;
   color: $black;
+
   &__inner {
     display: flex;
     justify-content: space-between;
   }
+
   &__left-side {
     display: flex;
     flex-direction: column;
@@ -1123,5 +1128,5 @@
     margin-top: 6px;
   }
 }
-
+// === / FOOTER ===
 @import "media";
