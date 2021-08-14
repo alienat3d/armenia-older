@@ -13,6 +13,21 @@
     box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0);
   }
 }
+
+.wave-dark {
+  animation-name: wave-dark;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wave-dark {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(#9b9b9b, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0px 10px rgba(#fff, 0);
+  }
+}
 // === / WAVE ANIMATION ===
 
 // === / FLASHING ANIMATION ===

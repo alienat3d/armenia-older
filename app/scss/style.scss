@@ -84,7 +84,7 @@
     top: 50%;
     right: 2.5%;
     transform: translateY(-60%);
-    transition: all .3s ease 0s;
+    transition: all 0.3s ease 0s;
     padding-left: 15px;
     &--about-armenia {
       transform: translateY(-20%);
@@ -115,19 +115,19 @@
     background-color: rgba(#5f6325, 0);
   }
   &__buttons-bar:hover &__btn-link--about-armenia {
-    background-color: rgba(#288c26, 0);
+    background-color: rgba(#cfcfcf, 0);
   }
   &__buttons-bar:hover &__btn-link--offer {
     background-color: rgba(#e1b990, 0);
   }
   &__buttons-bar:hover &__btn-link--about-us {
-    background-color: rgba(#2f2f2f, 0);
+    background-color: rgba(#cfcfcf, 0);
   }
   &__buttons-bar:hover &__btn-link--locations {
-    background-color: rgba(#288c26, 0);
+    background-color: rgba(#cfcfcf, 0);
   }
   &__buttons-bar:hover &__btn-link--contacts {
-    background-color: rgba(#90ae95, 0);
+    background-color: rgba(#7B8B9E, 0);
   }
 
   &__btn-link {
@@ -137,22 +137,22 @@
     margin-bottom: 25px;
     transition: $transition-fast;
     &--hero {
-      background-color: rgba(#5f6325, 0.8);
+      background-color: rgba(#5f6325);
     }
     &--about-armenia {
-      background-color: #288c26;
+      background-color: #cfcfcf;
     }
     &--offer {
       background-color: #e1b990;
     }
     &--about-us {
-      background-color: #2f2f2f;
+      background-color: #cfcfcf;
     }
     &--locations {
-      background-color: #288c26;
+      background-color: #cfcfcf;
     }
     &--contacts {
-      background-color: #90ae95;
+      background-color: #7B8B9E;
     }
   }
   &__menu {
@@ -388,12 +388,22 @@
 .about-armenia {
   position: relative;
   min-height: 100vh;
-  background-color: #1e7e1c;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 253, 247, 0.9) 10%,
+    rgba(150, 240, 175, 0.2) 100%
+  );
   text-align: center;
+
+  &__heading {
+    color: $black;
+  }
 
   &__heading::before,
   &__heading::after {
-    background-color: $white;
+    background-color: $black;
   }
 
   &__inner {
@@ -403,104 +413,100 @@
   }
 
   &__description {
-    text-align: left;
-    width: 470px;
+    margin-top: 65px;
+    margin-right: 36px;
     display: flex;
     flex-direction: column;
-    margin-top: 65px;
-    margin-right: 85px;
+    width: 565px;
+    text-align: left;
+    color: $black;
   }
   &__title {
     margin-bottom: 37px;
+    color: $black;
   }
 
   &__text {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   &__text-link {
+    margin-bottom: 128px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
     font-weight: 300;
     font-size: 11px;
     line-height: 16px;
-    position: relative;
-    width: 124px;
-    padding-bottom: 5px;
-    color: rgba(#fff, 0.7);
-    border-bottom: 1px solid rgba(#fff, 0.7);
-    transition: $transition;
-    margin-bottom: 128px;
+    letter-spacing: 0.045em;
+    width: 130px;
+    color: $black;
+    transition: $transition-fast;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid $black;
+    }
   }
   &__text-link::after {
     content: "";
     position: absolute;
+    left: 117px;
+    top: 6px;
     width: 15px;
     height: 5px;
-    -webkit-filter: brightness(75%);
-    filter: brightness(75%);
     background-image: url("../images/icons/arrow-down.svg");
-    left: 110px;
-    top: 6px;
-    transition: $transition;
-  }
-  &__text-link:hover {
-    color: $white;
-    border-bottom: 1px solid $white;
-  }
-  &__text-link:hover:after {
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
-  }
-
-  &__pictures {
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
   }
 
   &__video-link {
     display: block;
+    cursor: pointer;
   }
 
   &__video-cover {
-    width: 504px;
-    height: 327px;
-    border-radius: 2px;
+    position: relative;
+    min-width: 681px;
+    // min-height: 327px;
+    border-radius: 3px;
     filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.27));
-    position: absolute;
-    top: 82px;
-    right: 233px;
     z-index: 1;
   }
 
   &__video-cover-play {
     position: absolute;
-    width: 58px;
-    height: 58px;
-    top: 215px;
-    left: -33px;
+    width: 78px;
+    height: 78px;
+    top: 39.5%;
+    right: 32.5%;
     border-radius: 50%;
     transition: $transition;
     z-index: 2;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 
-  &__video-background {
-    width: 460px;
-    height: 474px;
-    border-radius: 2px;
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.27));
-  }
-  &__video-background-grey-filter {
-    width: 460px;
-    height: 474px;
-    background-color: rgba(#e7e7e7, 0.6);
-    position: absolute;
-    top: 0;
-    border-radius: 2px;
-  }
+  // &__video-background {
+  //   width: 460px;
+  //   height: 474px;
+  //   border-radius: 2px;
+  //   filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.27));
+  // }
+  // &__video-background-grey-filter {
+  //   width: 460px;
+  //   height: 474px;
+  //   background-color: rgba(#e7e7e7, 0.6);
+  //   position: absolute;
+  //   top: 0;
+  //   border-radius: 2px;
+  // }
   &__home-btn {
     margin-bottom: 60px;
   }
@@ -985,7 +991,6 @@
   }
 }
 
-
 // === FOOTER ===
 .footer {
   min-height: 200px;
@@ -1044,7 +1049,7 @@
   &__form {
     letter-spacing: 0.06em;
   }
-  
+
   &__form-title {
     font-weight: 900;
     font-size: 12px;
@@ -1069,10 +1074,9 @@
     line-height: 11px;
     padding: 5px 5px;
     color: #000;
-    border: .67px solid rgba(#000, .7);
+    border: 0.67px solid rgba(#000, 0.7);
     border-right: none;
     border-radius: 2px;
-
   }
   &__input::placeholder {
     font-weight: 400;
@@ -1089,7 +1093,7 @@
     line-height: 12px;
     border: 2px solid $green;
     border-radius: 2px;
-    background-color: rgba($green, .2);
+    background-color: rgba($green, 0.2);
     cursor: pointer;
   }
 
