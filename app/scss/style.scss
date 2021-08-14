@@ -30,8 +30,8 @@
     line-height: 20px;
     color: $dark-green;
   }
-  &__phone::before{
-    content: '';
+  &__phone::before {
+    content: "";
     position: absolute;
     width: 14px;
     height: 14px;
@@ -135,22 +135,22 @@
   &__buttons-bar:hover .wave {
     animation: none;
   }
-  &__buttons-bar:hover &__btn-link--hero{
+  &__buttons-bar:hover &__btn-link--hero {
     background-color: rgba(#5f6325, 0);
   }
-  &__buttons-bar:hover &__btn-link--about-armenia{
+  &__buttons-bar:hover &__btn-link--about-armenia {
     background-color: rgba(#288c26, 0);
   }
-  &__buttons-bar:hover &__btn-link--offer{
+  &__buttons-bar:hover &__btn-link--offer {
     background-color: rgba(#e1b990, 0);
   }
-  &__buttons-bar:hover &__btn-link--about-us{
+  &__buttons-bar:hover &__btn-link--about-us {
     background-color: rgba(#2f2f2f, 0);
   }
-  &__buttons-bar:hover &__btn-link--locations{
+  &__buttons-bar:hover &__btn-link--locations {
     background-color: rgba(#288c26, 0);
   }
-  &__buttons-bar:hover &__btn-link--contacts{
+  &__buttons-bar:hover &__btn-link--contacts {
     background-color: rgba(#90ae95, 0);
   }
 
@@ -225,13 +225,13 @@
     line-height: 19px;
     color: #fff;
   }
-&__link--disabled span {
-  display: inline-flex;
-  height: 22px;
+  &__link--disabled span {
+    display: inline-flex;
+    height: 22px;
     font-weight: 600;
     font-size: 18px;
     line-height: 19px;
-    color: rgba(#fff, .5);
+    color: rgba(#fff, 0.5);
     cursor: default;
   }
   &__link-btn {
@@ -243,12 +243,12 @@
     border-radius: 3px;
     margin-left: 8px;
   }
-  &__link-btn--disabled{
-    display: inline;
+  &__link-btn--disabled {
+    display: inline-flex;
     height: 17px;
     width: 19px;
-    background-color: rgba(#fff, .5);
-    border: 1px solid rgba(#000, .5);
+    background-color: rgba(#fff, 0.5);
+    border: 1px solid rgba(#000, 0.5);
     border-radius: 3px;
     margin-left: 8px;
     cursor: default;
