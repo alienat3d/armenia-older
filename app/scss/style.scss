@@ -90,6 +90,7 @@
       transform: translateY(-20%);
     }
     &--offer {
+      top: 73.5%;
       transform: translateY(-198%);
     }
     &--about-us {
@@ -137,7 +138,7 @@
     margin-bottom: 25px;
     transition: $transition-fast;
     &--hero {
-      background-color: rgba(#5f6325);
+      background-color: #5f6325;
     }
     &--about-armenia {
       background-color: #cfcfcf;
@@ -530,30 +531,29 @@
     padding: 22px 20px 15px;
     background-color: $dark-green-card;
     filter: drop-shadow(0px 4.02393px 10.0598px rgba(0, 0, 0, 0.6));
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   &__title {
     font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    padding-bottom: 22px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 15px;
   }
 
   &__divider {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     width: 52px;
     height: 0.5px;
-    background-color: rgba($white, 0.6);
-    margin-bottom: 23px;
+    background-color: rgba($white, 0.4);
   }
 
   &__text {
     opacity: 0.8;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 18px;
     margin-bottom: 28px;
   }
   &__bottom {
