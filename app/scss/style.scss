@@ -1,6 +1,6 @@
-@import "global";
 @import "reset";
 @import "vars";
+@import "global";
 @import "animation";
 
 .hero-wrapper {
@@ -39,16 +39,6 @@
     top: 2px;
     background-image: url(../images/icons/header-phone.svg);
   }
-  // &__button {
-  //   color: #000;
-  //   font-weight: 600;
-  //   font-size: 11px;
-  //   line-height: 13px;
-  //   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  //   transition: all 0.5s ease 0s;
-  //   cursor: pointer;
-  //   outline: none;
-  // }
 }
 
 .logo {
@@ -87,20 +77,6 @@
 }
 // === / CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
 
-// === FLYING TEST BUTTON ===
-// .button {
-//   border: 2px solid #10ea67;
-//   border-radius: 100px;
-//   padding: 7px 14px;
-// }
-// .button:hover {
-//   background-color: #10ea67;
-//   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-//   color: #fff;
-//   transform: translateY(-5px);
-// }
-// === / FLYING TEST BUTTON ===
-
 // === NAVIGATION ===
 .navigation {
   &__buttons-bar {
@@ -108,7 +84,7 @@
     top: 50%;
     right: 2.5%;
     transform: translateY(-60%);
-    transition: all 0.3s ease 0s;
+    transition: all .3s ease 0s;
     padding-left: 15px;
     &--about-armenia {
       transform: translateY(-20%);
@@ -130,7 +106,7 @@
   &__buttons-bar:hover &__link,
   &__buttons-bar:hover &__link--disabled {
     display: inline-flex;
-    transition: all, 0.3s;
+    transition: $transition-fast;
   }
   &__buttons-bar:hover .wave {
     animation: none;
@@ -159,7 +135,7 @@
     width: 11px;
     height: 10px;
     margin-bottom: 25px;
-    transition: all, 0.3s;
+    transition: $transition-fast;
     &--hero {
       background-color: rgba(#5f6325, 0.8);
     }
@@ -291,7 +267,7 @@
   }
   &__button-icon {
     margin-right: 14px;
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__button {
     position: relative;
@@ -316,7 +292,7 @@
     right: -60px;
     border-right: 60px solid transparent;
     transform: translateX(-100%);
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__button::after {
     content: "";
@@ -325,7 +301,7 @@
     left: -60px;
     border-left: 60px solid transparent;
     transform: translateX(100%);
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__button::before {
     top: 0;
@@ -367,41 +343,6 @@
   }
 }
 
-.social {
-  width: 134px;
-  height: 20px;
-  display: flex;
-  justify-content: space-between;
-  // FIXME: later play around with it
-  // &__img {
-  //   position: relative;
-  //   box-shadow: 0 0 0 4px #fff;
-  //   transition: color 0.3s;
-  //   z-index: 3;
-  // }
-  // &__img::after {
-  //   transform: scale(1.3);
-  //   opacity: 0;
-  //   top: -2px;
-  //   left: -2px;
-  //   padding: 2px;
-  //   z-index: -1;
-  //   background: #fff;
-  //   transition: transform 0.2s, opacity 0.3s;
-  //   pointer-events: none;
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   border-radius: 50%;
-  //   content: "";
-  //   box-sizing: content-box;
-  // }
-  // &__img:hover::after {
-  //   transform: scale(1);
-  //   opacity: 1;
-  // }
-}
-
 .heading {
   font-weight: 700;
   font-size: 60px;
@@ -438,7 +379,7 @@
   width: 29px;
   height: 29px;
   background-image: url("../images/icons/home.svg");
-  transition: 0.5s ease-in-out;
+  transition: $transition;
 }
 .home-btn:hover {
   transform: scale(1.1);
@@ -452,7 +393,7 @@
 
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
   }
 
   &__inner {
@@ -489,7 +430,7 @@
     padding-bottom: 5px;
     color: rgba(#fff, 0.7);
     border-bottom: 1px solid rgba(#fff, 0.7);
-    transition: all 0.5s;
+    transition: $transition;
     margin-bottom: 128px;
   }
   &__text-link::after {
@@ -502,11 +443,11 @@
     background-image: url("../images/icons/arrow-down.svg");
     left: 110px;
     top: 6px;
-    transition: all 0.5s;
+    transition: $transition;
   }
   &__text-link:hover {
-    color: $default;
-    border-bottom: 1px solid $default;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
   &__text-link:hover:after {
     -webkit-filter: brightness(100%);
@@ -539,7 +480,7 @@
     top: 215px;
     left: -33px;
     border-radius: 50%;
-    transition: 0.5s;
+    transition: $transition;
     z-index: 2;
     &:hover {
       transform: scale(1.1);
@@ -569,7 +510,7 @@
   width: 402px;
   display: flex;
   flex-direction: column;
-  color: $default;
+  color: $white;
   &__image {
     width: 402px;
     height: 262px;
@@ -598,7 +539,7 @@
     margin: 0 auto;
     width: 52px;
     height: 0.5px;
-    background-color: rgba($default, 0.6);
+    background-color: rgba($white, 0.6);
     margin-bottom: 23px;
   }
 
@@ -658,14 +599,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: $secondary;
+  color: $black;
   padding-bottom: 60px;
   &__heading {
     text-align: center;
   }
   &__heading::before,
   &__heading::after {
-    background-color: $secondary;
+    background-color: $black;
     width: 28%;
   }
 
@@ -689,8 +630,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: $default;
-    border-bottom: 1px solid $default;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
   &__link-more:hover {
     color: #000;
@@ -704,7 +645,7 @@
   padding-bottom: 60px;
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
     width: 42%;
   }
 
@@ -823,7 +764,7 @@
   }
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
     width: 24%;
   }
 
@@ -885,7 +826,7 @@
     height: 322px;
     background-color: rgba(#fff, 0.85);
     z-index: 1;
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__link:hover &__link-picture--filter {
     background-color: transparent;
@@ -916,12 +857,13 @@
   background-repeat: no-repeat;
 }
 
+// === CONTACTS ===
 .contacts {
   position: relative;
   margin-bottom: 72px;
   &__heading::before,
   &__heading::after {
-    background-color: $default;
+    background-color: $white;
     width: 39%;
   }
   &__info-block {
@@ -941,7 +883,7 @@
 
   &__info-icon {
     margin-right: 15px;
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__item-textbox {
     display: flex;
@@ -967,7 +909,7 @@
     font-size: 13px;
     line-height: 19px;
     border-bottom: 1px solid transparent;
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__info-link:hover &__info-text {
     border-bottom: 1px solid #fff;
@@ -982,7 +924,7 @@
 
   &__form-title {
     margin-bottom: 30px;
-    color: $secondary;
+    color: $black;
     font-weight: 700;
     font-size: 34px;
     line-height: 42px;
@@ -1036,21 +978,25 @@
     border: 4px solid $green;
     border-radius: 2.3px;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: $transition;
   }
   &__form-button:hover {
     background-color: rgba($green, 0.2);
   }
 }
 
+
+// === FOOTER ===
 .footer {
   min-height: 200px;
   padding: 54px 0;
-  color: $secondary;
+  color: $black;
+
   &__inner {
     display: flex;
     justify-content: space-between;
   }
+
   &__left-side {
     display: flex;
     flex-direction: column;
@@ -1076,19 +1022,29 @@
   }
 
   &__email {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+
+  &__copyright {
     font-weight: 400;
-    font-size: 10px;
     line-height: 12px;
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    color: rgba($black, 0.55);
   }
 
   &__center-wrapper {
+    margin: auto 0;
     min-width: 400px;
   }
 
   &__form {
-    margin: auto 0;
+    letter-spacing: 0.06em;
   }
-
+  
   &__form-title {
     font-weight: 900;
     font-size: 12px;
@@ -1104,6 +1060,7 @@
   }
 
   &__input {
+    margin-right: -5px;
     resize: none;
     width: 300px;
     background-color: transparent;
@@ -1112,14 +1069,16 @@
     line-height: 11px;
     padding: 5px 5px;
     color: #000;
-    border: 0.67px solid rgba(#000, 0.7);
+    border: .67px solid rgba(#000, .7);
+    border-right: none;
     border-radius: 2px;
-    margin-right: -6px;
+
   }
   &__input::placeholder {
     font-weight: 400;
     font-size: 9px;
     line-height: 11px;
+    letter-spacing: 0.06em;
     color: rgba(#000, 0.7);
   }
 
@@ -1130,67 +1089,41 @@
     line-height: 12px;
     border: 2px solid $green;
     border-radius: 2px;
-    background-color: rgba($green, 0.2);
+    background-color: rgba($green, .2);
     cursor: pointer;
   }
-
-  // &__authors {
-  //   margin-top: 20px;
-  // }
-
-  // &__authors-link {
-  //   position: relative;
-  //   display: inline-block;
-  //   margin-left: 34px;
-  // }
-  // &__authors-link:hover &__authors-img {
-  //   transform: scale(1.25);
-  // }
-  // &__authors-link:hover &__authors-name span {
-  //   border-bottom: 1px solid $green;
-  // }
-
-  // &__authors-img {
-  //   position: absolute;
-  //   top: 6%;
-  //   right: 95%;
-  //   width: 38px;
-  //   height: 38px;
-  //   transition: all 0.5s;
-  // }
-
-  // &__authors-name {
-  //   display: inline-block;
-  //   font-weight: 700;
-  //   font-size: 15px;
-  //   line-height: 22px;
-  //   width: 150px;
-  //   margin: 0 20px;
-  // }
-
-  // &__authors-name span {
-  //   border-bottom: 1px solid transparent;
-  //   text-align: center;
-  //   padding-bottom: 4px;
-  //   transition: all 0.5s;
-  //   font-weight: 500;
-  // }
 
   &__right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  &__social-wrapper {
-    display: flex;
-    justify-content: flex-end;
+
+  &__social {
+    text-align: right;
   }
 
-  &__copyright {
+  &__social-link {
+    display: inline-block;
+  }
+
+  &__social-link + &__social-link {
+    margin-left: 10px;
+  }
+
+  &__social-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__author {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+    letter-spacing: 0.01em;
+    color: rgba($black, 0.55);
   }
 }
 
+// =======
 @import "media";
