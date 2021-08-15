@@ -142,7 +142,7 @@
       background-color: #5f6325;
     }
     &--about-armenia {
-      background-color: #cfcfcf;
+      background-color: rgba(#cfcfcf, .2);
     }
     &--offer {
       background-color: #e1b990;
@@ -391,6 +391,10 @@
   height: 29px;
   background-image: url("../images/icons/home.svg");
   transition: $transition;
+
+  &.about-armenia__home-btn {
+    background-image: url('../images/icons/home-black.svg');
+  }
 }
 .home-btn:hover {
   transform: scale(1.1);
@@ -519,6 +523,7 @@
   //   border-radius: 2px;
   // }
   &__home-btn {
+    // TODO:
     margin-bottom: 60px;
   }
 }
@@ -825,6 +830,10 @@
     justify-content: space-between;
     padding-top: 42px;
     margin-bottom: 15px;
+  }
+
+  &__link {
+    cursor: pointer;
   }
 
   &__link-picture {
