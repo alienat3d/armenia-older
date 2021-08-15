@@ -13,6 +13,15 @@ body {
 input:focus::placeholder,
 textarea:focus::placeholder {color: transparent;}
 
+.container {
+  max-width: 1302px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.cursor {
+  cursor: pointer;
+}
 // .wrapper {
 // 	display: flex;
 // 	flex-direction: column;
@@ -26,11 +35,7 @@ textarea:focus::placeholder {color: transparent;}
 // 	flex: 0 0 auto;
 // }
 
-.container {
-  max-width: 1302px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+
 // .extended-container {
 //   max-width: 1302px;
 //   margin: 0 auto;

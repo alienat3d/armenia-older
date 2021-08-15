@@ -109,7 +109,8 @@
     display: inline-flex;
     transition: $transition-fast;
   }
-  &__buttons-bar:hover .wave {
+  &__buttons-bar:hover .wave,
+  &__buttons-bar:hover .wave-dark {
     animation: none;
   }
   &__buttons-bar:hover &__btn-link--hero {
@@ -128,7 +129,7 @@
     background-color: rgba(#cfcfcf, 0);
   }
   &__buttons-bar:hover &__btn-link--contacts {
-    background-color: rgba(#7B8B9E, 0);
+    background-color: rgba(#7b8b9e, 0);
   }
 
   &__btn-link {
@@ -153,7 +154,7 @@
       background-color: #cfcfcf;
     }
     &--contacts {
-      background-color: #7B8B9E;
+      background-color: #7b8b9e;
     }
   }
   &__menu {
@@ -196,11 +197,11 @@
   }
   &__link {
     height: 22px;
-    cursor: pointer;
     font-weight: 600;
     font-size: 18px;
     line-height: 19px;
     color: #fff;
+    cursor: pointer;
   }
   &__link--disabled span {
     display: inline-flex;
@@ -231,6 +232,17 @@
     cursor: default;
   }
 }
+.about-armenia,
+.offer,
+.locations,
+.contacts {
+  .navigation__link {
+    color: $black;
+  }
+  .navigation__link--disabled span {
+    color: rgba($black, 0.5);
+  }
+}
 
 .hero {
   padding-bottom: 80px;
@@ -246,16 +258,13 @@
   &__title-word {
     color: transparent;
     font-weight: 300;
-    font-size: 200px;
+    font-size: 220px;
     line-height: 244px;
     min-width: 100%;
     letter-spacing: 45px;
   }
 
   &__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 170px;
   }
 
@@ -272,6 +281,7 @@
   }
   &__button {
     position: relative;
+    margin-left: auto;
     display: block;
     overflow: hidden;
     width: 100%;
@@ -518,6 +528,7 @@
   display: flex;
   flex-direction: column;
   color: $white;
+
   &__image {
     width: 402px;
     height: 262px;
@@ -556,15 +567,22 @@
     line-height: 18px;
     margin-bottom: 28px;
   }
+
   &__bottom {
     display: flex;
     justify-content: space-between;
   }
+
   &__price {
+    position: relative;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     color: $green;
+  }
+
+  &__price-discount {
+    display: none;
   }
 
   &__stats {
@@ -593,6 +611,16 @@
 
   &__stats-persons {
     display: flex;
+  }
+
+  &.card--promo{
+    .card__price-discount {
+      position: absolute;
+      top: 0;
+      right: -35px;
+      display: block;
+      text-decoration: line-through;
+    }
   }
 }
 

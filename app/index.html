@@ -24,7 +24,7 @@
             <img class="logo__image" src="images/icons/logo.svg" alt="логотип в виде компаса">
             <p class="logo__text">Mrs Guide</p>
           </a>
-          <a class="header__phone" href="tel:77777777777">
+          <a class="header__phone cursor" href="tel:77777777777">
             +7-777-777-7777
           </a>
         </div>
@@ -34,14 +34,15 @@
       <section class="hero">
         <div class="container">
           <div class="hero__title">
+            <!-- FIXME: try maybe make it visible with gradient color -->
             <h1 class="hero__title-word">Армения</h1>
           </div>
           <div class="hero__bottom">
-            <p class="hero__text">
+            <!-- <p class="hero__text">
               Армения, Армения, Армения.. Страна, которая крадет сердце каждого, кто там однажды побывал.
               Невозможно не покориться красоте природы, вкусу армянской кухни и гостеприимству ее жителей.
-            </p>
-            <a class="hero__button" href="#offer">
+            </p> -->
+            <a class="hero__button cursor" href="#offer">
               <svg class="hero__button-icon" width="22" height="24" viewBox="0 0 22 24" fill="#10EA67">
                 <path
                   d="M20.5625 13.7374C21.9083 12.97 21.9083 11.03 20.5625 10.2626L3.81882 0.714981C2.48552 -0.0452995 0.828125 0.917532 0.828125 2.45237L0.828125 21.5476C0.828125 23.0825 2.48552 24.0453 3.81882 23.285L20.5625 13.7374Z">
@@ -113,7 +114,8 @@
               </ul>
           </nav>
         </div>
-        <a class="next-screen-scroll--bright" href="#about-armenia"></a>
+        <!-- FIXME: ask if need to remove this -->
+        <a class="next-screen-scroll--bright cursor" href="#about-armenia"></a>
       </section>
   </div>
 
@@ -204,7 +206,7 @@
     <div class="container">
       <h3 class="title offer__title">Колоритные туры</h3>
       <div class="offer__colorful-tours">
-        <div class="card">
+        <div class="card card--promo">
           <img class="card__image" src="images/tours/wine-tour.jpg" alt="Винный тур обложка">
           <div class="card__info">
             <h4 class="card__title">Винный тур</h4>
@@ -214,8 +216,10 @@
               пещерная винодельня в районе Арени. культура виноделия отображалась практически во всех направлениях армянского прикладного искусства.
             </p>
             <div class="card__bottom">
-              <div class="card__price">35$</div>
-              <div class="card__price-discount">47$</div>
+              <div class="card__price">
+                35$
+                <div class="card__price-discount">47$</div>
+              </div>
               <div class="card__stats">
                 <div class="card__stats-days">
                   <img class="card__stat-days-img" src="images/icons/time-clock.svg" alt="иконка часов">
@@ -242,8 +246,9 @@
               своего времени.
             </p>
             <div class="card__bottom">
-              <div class="card__price">180$</div>
-              <div class="card__price-discount"></div>
+              <div class="card__price">180$
+                <div class="card__price-discount"></div>
+              </div>
               <div class="card__stats">
                 <div class="card__stats-days">
                   <img class="card__stat-days-img" src="images/icons/time-clock.svg" alt="иконка часов">
@@ -257,7 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card--promo">
           <img class="card__image" src="images/tours/gastronomic-tour.jpg" alt="Гастрономический тур обложка">
           <div class="card__info">
             <h4 class="card__title">Гастрономический тур</h4>
@@ -270,8 +275,10 @@
               участии профессиональных наставников.
             </p>
             <div class="card__bottom">
-              <div class="card__price">40$</div>
-              <div class="card__price-discount">52$</div>
+              <div class="card__price">
+                40$
+                <div class="card__price-discount">52$</div>
+              </div>
               <div class="card__stats">
                 <div class="card__stats-days">
                   <img class="card__stat-days-img" src="images/icons/time-clock.svg" alt="иконка часов">
@@ -305,8 +312,10 @@
               вершину (3887 м).
             </p>
             <div class="card__bottom">
-              <div class="card__price">225$</div>
-              <div class="card__price-discount"></div>
+              <div class="card__price">
+                225$
+                <div class="card__price-discount"></div>
+              </div>
               <div class="card__stats">
                 <div class="card__stats-days">
                   <img class="card__stat-days-img" src="images/icons/time-clock.svg" alt="иконка часов">
@@ -320,7 +329,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card--promo">
           <img class="card__image" src="images/tours/texarkana-valley-tour.jpg"
             alt="тур 'По склонам Тексарских гор' обложка">
           <div class="card__info">
@@ -336,8 +345,10 @@
               другой тропе.
             </p>
             <div class="card__bottom">
-              <div class="card__price">150$</div>
-              <div class="card__price-discount">176$</div>
+              <div class="card__price">
+                150$
+                <div class="card__price-discount">176$</div>
+              </div>
               <div class="card__stats">
                 <div class="card__stats-days">
                   <img class="card__stat-days-img" src="images/icons/time-clock.svg" alt="иконка часов">
@@ -351,7 +362,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card--promo">
           <img class="card__image" src="images/tours/smatabert-fortress-tour.jpg"
             alt="Тур к высокогорной крепости обложка">
           <div class="card__info">
@@ -365,8 +376,10 @@
               полукруглыми башнями.
             </p>
             <div class="card__bottom">
-              <div class="card__price">175$</div>
-              <div class="card__price-discount">189$</div>
+              <div class="card__price">
+                175$
+                <div class="card__price-discount">189$</div>
+              </div>
               <div class="card__stats">
                 <div class="card__stats-days">
                   <img class="card__stat-days-img" src="images/icons/time-clock.svg" alt="иконка часов">
@@ -401,7 +414,8 @@
           </li>
           <ul class="navigation__menu">
             <li class="navigation__item">
-              <a class="navigation__link" href="#about-armenia">Об Армении
+              <a class="navigation__link" href="#about-armenia">
+                Об Армении
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -412,17 +426,20 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#about-us">О нас
+              <a class="navigation__link" href="#about-us">
+                О нас
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#locations">Галерея
+              <a class="navigation__link" href="#locations">
+                Галерея
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#contacts">Контакты
+              <a class="navigation__link" href="#contacts">
+                Контакты
                 <div class="navigation__link-btn"></div>
               </a>
             </li>
@@ -612,6 +629,7 @@
   </section>
 
   <div class="bottom-wrapper">
+
     <section class="contacts" id="contacts">
       <h2 class="heading contacts__heading">Контакты</h2>
       <div class="container">
@@ -719,6 +737,7 @@
       </nav>
     </section>
     </main>
+    
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
