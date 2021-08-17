@@ -142,7 +142,7 @@
       background-color: #5f6325;
     }
     &--about-armenia {
-      background-color: rgba(#cfcfcf, .2);
+      background-color: rgba(#cfcfcf, 0.2);
     }
     &--offer {
       background-color: #e1b990;
@@ -268,13 +268,6 @@
     margin-bottom: 170px;
   }
 
-  &__text {
-    font-size: 14px;
-    line-height: 17px;
-    width: 510px;
-    border-left: 1px solid $green;
-    padding-left: 7px;
-  }
   &__button-icon {
     margin-right: 14px;
     transition: $transition;
@@ -393,7 +386,7 @@
   transition: $transition;
 
   &.about-armenia__home-btn {
-    background-image: url('../images/icons/home-black.svg');
+    background-image: url("../images/icons/home-black.svg");
   }
 }
 .home-btn:hover {
@@ -529,22 +522,24 @@
 }
 
 .card {
-  width: 402px;
-  display: flex;
-  flex-direction: column;
+  width: 392px;
   color: $white;
 
   &__image {
-    width: 402px;
-    height: 262px;
+    width: 392px;
+    height: 207px;
     filter: drop-shadow(0px 4.02393px 10.0598px rgba(0, 0, 0, 0.6));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     padding: 22px 20px 15px;
+    min-height: 305px;
     background-color: $dark-green-card;
     filter: drop-shadow(0px 4.02393px 10.0598px rgba(0, 0, 0, 0.6));
     border-bottom-left-radius: 5px;
@@ -579,28 +574,31 @@
   }
 
   &__price {
+    margin-left: 3px;
     position: relative;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
     color: $green;
   }
 
   &__price-discount {
     display: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba($green, 0.3);
   }
 
   &__stats {
-    display: flex;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: $grey;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
   }
 
   &__stats-days {
     display: flex;
-    margin-right: 11px;
+    margin-right: 8px;
   }
 
   &__stat-days-img {
@@ -608,21 +606,12 @@
     height: 13px;
     margin-right: 5px;
   }
-  &__stat-persons-img {
-    width: 18px;
-    height: 16px;
-    margin-right: 5px;
-  }
 
-  &__stats-persons {
-    display: flex;
-  }
-
-  &.card--promo{
+  &.card--promo {
     .card__price-discount {
       position: absolute;
-      top: 0;
-      right: -35px;
+      top: 5px;
+      right: -40px;
       display: block;
       text-decoration: line-through;
     }
@@ -640,6 +629,7 @@
   background-size: cover;
   color: $black;
   padding-bottom: 60px;
+
   &__heading {
     text-align: center;
   }
@@ -659,22 +649,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
-  }
-
-  &__link-more {
-    position: absolute;
-    bottom: -10%;
-    right: 46%;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: $white;
-    border-bottom: 1px solid $white;
-  }
-  &__link-more:hover {
-    color: #000;
-    border-bottom: 1px solid #000;
   }
 }
 .about-us {
