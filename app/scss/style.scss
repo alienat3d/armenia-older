@@ -1,3 +1,4 @@
+@import "libs";
 @import "reset";
 @import "vars";
 @import "global";
@@ -726,6 +727,7 @@
     height: 211px;
     margin-right: 25px;
   }
+  
   &__team-main-guide-photo {
     position: absolute;
     top: 77px;
@@ -735,11 +737,13 @@
     height: 189px;
     background-image: url("../images/about-us/main-guide.jpg");
   }
+
   &__team-main-guide {
-    padding: 91px 40px 91px 102px;
     margin-left: 112px;
+    border-radius: 2px;
+    padding: 91px 40px 91px 102px;
     font-style: italic;
-    background-color: rgba(#1e7e1c, 0.4);
+    background-color: #9AEC98;
   }
 
   &__team-team-main-guide-name {
