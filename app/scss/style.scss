@@ -397,6 +397,7 @@
   &__heading::before,
   &__heading::after {
     background-color: $black;
+    width: 37.4%;
   }
 
   &__inner {
@@ -606,7 +607,7 @@
   &__heading::before,
   &__heading::after {
     background-color: $black;
-    width: 28%;
+    width: 31.1%;
   }
 
   &__title {
@@ -645,7 +646,7 @@
   &__heading::before,
   &__heading::after {
     background-color: $black;
-    width: 42%;
+    width: 43.5%;
   }
 
   &__description {
@@ -800,7 +801,7 @@
   &__heading::before,
   &__heading::after {
     background-color: $black;
-    width: 24%;
+    width: 27.5%;
   }
 
   &__slider{
@@ -937,17 +938,17 @@
 
 .contacts {
   position: relative;
-  margin-bottom: 72px;
+  margin-bottom: 45px;
   padding-top: $between;
 
   &__heading {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
   }
 
   &__heading::before,
   &__heading::after {
     background-color: $white;
-    width: 39%;
+    width: 40.2%;
   }
   &__info-block {
     display: flex;
@@ -1005,6 +1006,7 @@
   }
 
   &__form {
+    border-radius: 2px;
     width: 100%;
     min-height: 312px;
     background-color: rgba(#fff, 0.75);
@@ -1096,7 +1098,7 @@
   &__logo {
     display: flex;
     align-items: center;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
   }
 
   &__logo-image {
@@ -1115,7 +1117,7 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   &__copyright {
@@ -1209,7 +1211,7 @@
   &__author {
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 18px;
     letter-spacing: 0.01em;
     color: rgba($black, 0.55);
   }
