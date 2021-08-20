@@ -783,8 +783,7 @@
 .locations {
   position: relative;
   padding-top: $between;
-  padding-bottom: 80px;
-  min-height: 100vh;
+  padding-bottom: $between;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
@@ -804,8 +803,25 @@
     width: 24%;
   }
 
+  &__slider{
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: none;
+      padding: 22px 15px 22px 12px;
+      background-color: #E4FBEA;
+      cursor: pointer;
+    }
+    .slick-prev {
+      z-index: 5;
+      right: 73px;
+    }
+  }
+
   &__inner {
-    display: grid;
+    display: grid !important;
     height: 769px;
     grid-template-columns: (33.3%) (27.3%) 3fr;
     grid-template-rows: (34%) (20.7%) 3fr;

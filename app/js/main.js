@@ -1,15 +1,29 @@
-$(document).ready(function () {
-  // === SLICK SLIDER JQ ===
+$(function () {
+  // === SLICK SLIDER JQ (ABOUT-US) ===
   $(".about-us__slider").slick({
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 4000,
     adaptiveHeight: true,
-    prevArrow: "<button type='button' class='slick-prev'><img src='images/icons/slider-arrow-left.svg'></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='images/icons/slider-arrow-right.svg'></button>"
+    prevArrow:
+      "<button type='button' class='slick-prev'><img src='images/icons/slider-arrow-left.svg'></button>",
+    nextArrow:
+      "<button type='button' class='slick-next'><img src='images/icons/slider-arrow-right.svg'></button>",
   });
-  // === / SLICK SLIDER JQ ===
+  // === / SLICK SLIDER JQ (ABOUT-US) ===
+  // === SLICK SLIDER JQ (LOCATIONS) ===
+  $(".locations__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    prevArrow:
+      "<button type='button' class='slick-prev'><img src='images/icons/slider-arrow-left.svg'></button>",
+    nextArrow:
+      "<button type='button' class='slick-next'><img src='images/icons/slider-arrow-right.svg'></button>",
+  });
+  // === / SLICK SLIDER JQ (LOCATIONS) ===
 
   // Add smooth scrolling to all links
   $("a").on("click", function (event) {
