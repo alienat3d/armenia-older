@@ -23,12 +23,38 @@ textarea:focus::placeholder {color: transparent;}
   cursor: pointer;
 }
 
+// === CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
+.next-screen-scroll,
+.next-screen-scroll--bright,
+.next-screen-scroll--very-bright,
+.prev-screen-scroll,
+.prev-screen-scroll--bright,
+.prev-screen-scroll--very-bright {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  min-height: 100%;
+  z-index: 5;
+}
+
+.prev-screen-scroll,
+.prev-screen-scroll--bright,
+.prev-screen-scroll--very-bright {
+  left: 0;
+}
+// === / CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
+
+// === FIXING FANCYBOX ISSUE ===
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
+// === / FIXING FANCYBOX ISSUE ===
+
 // .wrapper {
 // 	display: flex;
 // 	flex-direction: column;

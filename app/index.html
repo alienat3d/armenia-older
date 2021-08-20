@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="#">
+          <a class="logo cursor" href="#">
             <img class="logo__image" src="images/icons/logo.svg" alt="логотип в виде компаса">
             <p class="logo__text">Mrs Guide</p>
           </a>
@@ -459,7 +459,8 @@
     <div class="container">
       <div class="about-us__team">
         <h3 class="title about-us__team-title">Наша команда</h3>
-        <div class="about-us__team-inner">
+        <!-- <div class="about-us__team-inner">
+          ===
           <div class="about-us__team-main-guide">
             <img class="about-us__team-main-guide-photo" src="images/about-us/main-guide.jpg" alt="фото главного гида">
             <h4 class="about-us__team-team-main-guide-name">Манэ</h4>
@@ -467,68 +468,105 @@
             <p class="about-us__team-team-main-guide-info">за плечами более 70 туров</p>
             <p class="about-us__team-team-main-guide-info">владеет 5 языками</p>
           </div>
-          <div class="about-us__team-photos">
-            <img class="about-us__team-photo" src="images/about-us/girl.jpg" alt="фото женщины">
-            <img class="about-us__team-photo" src="images/about-us/guy.jpg" alt="фото мужчины">
+          ===
+          <div class="about-us__slider-wrapper">
+            <div class="about-us__slider">
+              <div class="about-us__slider-box-lg">
+                <img class="about-us__slider-photo-lg" src="images/about-us/main-guide.jpg"
+                  alt="фото главного гида">
+                <h4 class="about-us__slider-title-lg">Манэ</h4>
+                <p class="about-us__slider-text-lg">7 лет в нашей команде</p>
+                <p class="about-us__slider-txt">за плечами более 70 туров</p>
+                <p class="about-us__slider-txt">владеет 5 языками</p>
+              </div>
+              <div class="about-us__slider-box">
+                <img class="about-us__slider-photo" src="images/about-us/girl.jpg" alt="фото женщины">
+                <p class="about-us__slider-text">Анна, 4 года в нашей команде...</p>
+              </div>
+              <div class="about-us__slider-box">
+                <img class="about-us__slider-photo" src="images/about-us/guy.jpg" alt="фото мужчины">
+                <p class="about-us__slider-text">Давид, 6 лет в нашей команде...</p>
+              </div>
+              <div class="about-us__slider-box">
+                <img class="about-us__slider-photo" src="images/about-us/girl.jpg" alt="фото женщины">
+                <p class="about-us__slider-text">Анна, 4 года в нашей команде...</p>
+              </div>
+              <div class="about-us__slider-box">
+                <img class="about-us__slider-photo" src="images/about-us/guy.jpg" alt="фото мужчины">
+                <p class="about-us__slider-text">Давид, 6 лет в нашей команде...</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </div> -->
+        <nav class="navigation">
+          <ul class="navigation__buttons-bar navigation__buttons-bar--about-us">
+            <li class="navigation__btn">
+              <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#about-armenia"></a>
+            </li>
+            <li class="navigation__btn">
+              <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#offer"></a>
+            </li>
+            <li class="navigation__btn">
+              <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#about-us"></a>
+            </li>
+            <li class="navigation__btn">
+              <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#locations"></a>
+            </li>
+            <li class="navigation__btn">
+              <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#contacts"></a>
+            </li>
+            <ul class="navigation__menu">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#about-armenia">Об Армении
+                  <div class="navigation__link-btn"></div>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#offer">Туры
+                  <div class="navigation__link-btn"></div>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link--disabled" href="#about-us">
+                  <span>О нас</span>
+                  <div class="navigation__link-btn--disabled"></div>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#locations">Галерея
+                  <div class="navigation__link-btn"></div>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#contacts">Контакты
+                  <div class="navigation__link-btn"></div>
+                </a>
+              </li>
+            </ul>
+        </nav>
+        <a class="home-btn about-us__home-btn cursor" href="#hero"></a>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__buttons-bar navigation__buttons-bar--about-us">
-          <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#about-armenia"></a>
-          </li>
-          <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#offer"></a>
-          </li>
-          <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#about-us"></a>
-          </li>
-          <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#locations"></a>
-          </li>
-          <li class="navigation__btn">
-            <a class="navigation__btn-link navigation__btn-link--about-us wave-dark" href="#contacts"></a>
-          </li>
-          <ul class="navigation__menu">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#about-armenia">Об Армении
-                <div class="navigation__link-btn"></div>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#offer">Туры
-                <div class="navigation__link-btn"></div>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link--disabled" href="#about-us">
-                <span>О нас</span>
-                <div class="navigation__link-btn--disabled"></div>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#locations">Галерея
-                <div class="navigation__link-btn"></div>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#contacts">Контакты
-                <div class="navigation__link-btn"></div>
-              </a>
-            </li>
-          </ul>
-      </nav>
-      <a class="home-btn about-us__home-btn cursor" href="#hero"></a>
-    </div>
-    <a class="prev-screen-scroll--bright" href="#offer"></a>
-    <a class="next-screen-scroll--bright" href="#locations"></a>
+      <a class="prev-screen-scroll--bright" href="#offer"></a>
+      <a class="next-screen-scroll--bright" href="#locations"></a>
   </section>
 
   <section class="locations" id="locations">
     <h2 class="heading locations__heading">Впечатляющие локации</h2>
     <div class="container">
-      <div class="locations__inner">
+      <div class="locations__slider">
+        <div class="locations__inner">
+          <div class="locations__item" style="background-image: url('images/locations/1.jpg');"></div>
+          <div class="locations__item" style="background-image: url('images/locations/2.jpg');"></div>
+          <div class="locations__item" style="background-image: url('images/locations/3.jpg');"></div>
+          <div class="locations__item" style="background-image: url('images/locations/4.jpg');"></div>
+          <div class="locations__item" style="background-image: url('images/locations/5.jpg');"></div>
+          <div class="locations__item" style="background-image: url('images/locations/6.jpg');"></div>
+        </div>
+        <div class="locations__inner">
+
+        </div>
+      </div>
+      <!-- <div class="locations__inner">
         <div class="locations__inner-background">
           <div class="locations__top">
             <a class="locations__link" href="#">
@@ -552,7 +590,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <nav class="navigation">
         <ul class="navigation__buttons-bar navigation__buttons-bar--locations">
           <li class="navigation__btn">

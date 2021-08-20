@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  // === SLICK SLIDER JQ ===
+  $(".about-us__slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    adaptiveHeight: true,
+    prevArrow: "<button type='button' class='slick-prev'><img src='images/icons/slider-arrow-left.svg'></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='images/icons/slider-arrow-right.svg'></button>"
+  });
+  // === / SLICK SLIDER JQ ===
+
   // Add smooth scrolling to all links
   $("a").on("click", function (event) {
     // Make sure this.hash has a value before overriding default behavior
