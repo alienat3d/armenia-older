@@ -1,17 +1,29 @@
 $(function () {
   // === SLICK SLIDER JQ (ABOUT-US) ===
-  $(".about-us__slider").slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
+  // === LEFT SLIDER ===
+  $(".about-us__slider-lg").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    adaptiveHeight: true,
+    autoplaySpeed: 7000,
+    fade: true,
+    asNavFor: ".about-us__slider-sm",
+    arrows: false,
+  });
+  // === / LEFT SLIDER===
+  // === RIGHT SLIDER===
+  $(".about-us__slider-sm").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    asNavFor: ".about-us__slider-lg",
     prevArrow:
       "<button type='button' class='slick-prev'><img src='images/icons/slider-arrow-left.svg'></button>",
     nextArrow:
       "<button type='button' class='slick-next'><img src='images/icons/slider-arrow-right.svg'></button>",
   });
+  // === / RIGHT SLIDER===
   // === / SLICK SLIDER JQ (ABOUT-US) ===
+
   // === SLICK SLIDER JQ (LOCATIONS) ===
   $(".locations__slider").slick({
     slidesToShow: 1,

@@ -626,7 +626,8 @@
 .about-us {
   position: relative;
   padding-top: $between;
-  padding-bottom: 60px;
+  padding-bottom: $between;
+  margin-bottom: 20px;
   min-height: 100vh;
   color: #000;
   background: rgb(255, 255, 255);
@@ -665,7 +666,7 @@
     justify-content: space-around;
     text-align: center;
     background-color: #ceffcd;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   &__stats-item {
@@ -700,6 +701,62 @@
     margin-bottom: 100px;
   }
 
+  &__sliders-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider-lg {
+    max-width: 555px;
+    max-height: 311px;
+  }
+
+  &__slider-box-lg {
+  }
+
+  &__slider-photo-lg {
+  }
+
+  &__slider-title-lg {
+  }
+
+  &__slider-text-lg {
+  }
+
+  &__slider-txt-lg {
+  }
+
+  &__slider-sm {
+    max-width: 399px;
+    max-height: 311px;
+
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      border: none;
+      width: 45px;
+      height: 10px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .slick-prev {
+    right: 64px;
+  }
+
+  &__slider-box {
+  }
+
+  &__slider-photo {
+  }
+
+  &__slider-text {
+  }
+
   &__slider-photo-lg {
     border-radius: 2px;
     position: absolute;
@@ -707,7 +764,6 @@
     left: 0px;
     width: 193px;
     height: 189px;
-    background-image: url("../images/about-us/main-guide.jpg");
   }
 
   &__slider-box-lg {
@@ -763,22 +819,6 @@
     font-size: 15px;
     line-height: 18px;
   }
-
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    bottom: -90px;
-    right: 5px;
-    border: none;
-    width: 45px;
-    height: 10px;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .slick-prev {
-    right: 64px;
-  }
 }
 
 .locations {
@@ -804,7 +844,7 @@
     width: 27.5%;
   }
 
-  &__slider{
+  &__slider {
     .slick-prev,
     .slick-next {
       position: absolute;
@@ -812,7 +852,7 @@
       right: 0;
       border: none;
       padding: 22px 15px 22px 12px;
-      background-color: #E4FBEA;
+      background-color: #e4fbea;
       cursor: pointer;
     }
     .slick-prev {
