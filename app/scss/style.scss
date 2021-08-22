@@ -26,7 +26,7 @@
 
   &__phone {
     position: relative;
-    padding-left: 22px;
+    padding-left: 19px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -67,8 +67,10 @@
     transform: translateY(-60%);
     transition: all 0.3s ease 0s;
     padding-left: 15px;
+
+    &--hero,
     &--about-armenia {
-      transform: translateY(-20%);
+      transform: translateY(-100%);
     }
     &--offer {
       top: 73.5%;
@@ -247,11 +249,6 @@
     line-height: 244px;
     width: 100%;
     letter-spacing: 42px;
-//     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,0) 100%);
-// background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 63%,rgba(255,255,255,0) 100%);
-// background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 63%,rgba(255,255,255,0) 100%);
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-
   }
 
   &__bottom {
@@ -415,14 +412,14 @@
   }
 
   &__description {
-    margin-top: 65px;
-    margin-right: 36px;
+    margin-right: 40px;
     display: flex;
     flex-direction: column;
     width: 565px;
     text-align: left;
     color: $black;
   }
+
   &__title {
     margin-bottom: 37px;
     color: $black;
