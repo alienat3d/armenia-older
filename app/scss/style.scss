@@ -231,19 +231,27 @@
 
   &__title {
     margin-bottom: 44px;
-    background-image: url("../images/armenia.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    // background-image: url("../images/armenia.png");
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: center;
   }
 
   &__title-word {
-    color: transparent;
+    // color: transparent;
+    background: -webkit-linear-gradient(rgba(#fff, 1) 50%, rgba(#fff, .8) 63%, rgba(#fff, .6) 70%, rgba(#fff, .3) 80%, rgba(#fff, .1) 90%, rgba(#fff, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-weight: 300;
     font-size: 220px;
     line-height: 244px;
-    min-width: 100%;
-    letter-spacing: 45px;
+    width: 100%;
+    letter-spacing: 42px;
+//     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,0) 100%);
+// background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 63%,rgba(255,255,255,0) 100%);
+// background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 63%,rgba(255,255,255,0) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+
   }
 
   &__bottom {
