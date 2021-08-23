@@ -963,7 +963,6 @@
 
 .contacts {
   position: relative;
-  margin-bottom: 45px;
   padding-top: $between;
 
   &__heading {
@@ -1105,8 +1104,8 @@
 
 // === FOOTER ===
 .footer {
+  margin: 12% 0 60px;
   min-height: 200px;
-  padding: 54px 0;
   color: $black;
 
   &__inner {
@@ -1139,10 +1138,16 @@
   }
 
   &__email {
+    margin-bottom: 10px;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    transition: $transition-fast;
+
+    &:hover {
+      border-bottom: 1px solid $black;
+    }
   }
 
   &__copyright {
@@ -1222,6 +1227,11 @@
 
   &__social-link {
     display: inline-block;
+    transition: $transition;
+
+    &:hover{
+    transform: scale(1.15);
+    }
   }
 
   &__social-link + &__social-link {
@@ -1233,12 +1243,26 @@
     height: 32px;
   }
 
+  &__contact-author {
+    display: block;
+    text-align: right;
+  }
+
   &__author {
+    display: inline-block;
+    padding-right: 2px;
     font-weight: 400;
     font-size: 10px;
     line-height: 18px;
     letter-spacing: 0.01em;
     color: rgba($black, 0.55);
+    border-bottom: 1px solid transparent;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $black;
+      border-bottom: 1px solid $black;
+    }
   }
 }
 
