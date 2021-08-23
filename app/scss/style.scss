@@ -73,11 +73,11 @@
       transform: translateY(-100%);
     }
     &--offer {
-      top: 73.5%;
-      transform: translateY(-198%);
+      top: 73%;
+      transform: translateY(-199%);
     }
     &--about-us {
-      transform: translateY(-141%);
+      transform: translateY(-102%);
     }
     &--locations {
       transform: translateY(-53%);
@@ -230,7 +230,7 @@
 
 .hero {
   padding-bottom: 80px;
-
+  // TODO: ask if such gradient is okay or not
   &__title {
     margin-bottom: 44px;
     // background-image: url("../images/armenia.png");
@@ -241,9 +241,16 @@
 
   &__title-word {
     // color: transparent;
-    background: -webkit-linear-gradient(rgba(#fff, 1) 50%, rgba(#fff, .8) 63%, rgba(#fff, .6) 70%, rgba(#fff, .3) 80%, rgba(#fff, .1) 90%, rgba(#fff, 0) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(
+      rgba(#fff, 1) 50%,
+      rgba(#fff, 0.8) 63%,
+      rgba(#fff, 0.6) 70%,
+      rgba(#fff, 0.3) 80%,
+      rgba(#fff, 0.1) 90%,
+      rgba(#fff, 0) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 300;
     font-size: 220px;
     line-height: 244px;
@@ -631,8 +638,7 @@
 .about-us {
   position: relative;
   padding-top: $between;
-  padding-bottom: $between;
-  margin-bottom: 20px;
+  // padding-bottom: $between;
   min-height: 100vh;
   color: #000;
   background: rgb(255, 255, 255);
@@ -646,7 +652,7 @@
 
   &__heading {
     position: relative;
-    margin-bottom: 62px;
+    margin-bottom: 35px;
   }
 
   &__heading::before,
@@ -656,7 +662,7 @@
   }
 
   &__description {
-    margin: 0 auto 70px;
+    margin: 0 auto 50px;
     text-align: center;
     max-width: 884px;
     font-weight: 500;
@@ -665,7 +671,7 @@
   }
 
   &__stats {
-    padding: 40px 320px;
+    padding: 35px 320px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -718,14 +724,14 @@
   }
 
   &__slider-sm {
-    max-width: 399px;
+    max-width: 419px;
     max-height: 311px;
 
     .slick-prev,
     .slick-next {
       position: absolute;
       bottom: 0;
-      right: 5px;
+      right: 20px;
       border: none;
       width: 45px;
       height: 10px;
@@ -735,14 +741,14 @@
   }
 
   .slick-prev {
-    right: 64px;
+    right: 79px;
   }
 
   &__slider-photo-lg {
     border-radius: 2px;
     position: absolute;
-    top: 77px;
-    left: 0px;
+    top: 62px;
+    left: 0;
     width: 193px;
     height: 189px;
   }
@@ -750,7 +756,7 @@
   &__slider-box-lg {
     margin-left: 112px;
     border-radius: 2px;
-    padding: 91px 40px 91px 102px;
+    padding: 91px 40px 77px 102px;
     font-style: italic;
     background-color: #9aec98;
   }
@@ -759,13 +765,13 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+    margin-left: 5px;
   }
 
-  &__slider-text-lg,
-  &__slider-txt {
+  &__slider-text-lg {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     margin-left: 5px;
     font-weight: 600;
     font-style: italic;
@@ -782,10 +788,6 @@
     background-color: #000;
   }
 
-  &__slider-wrapper {
-    position: relative;
-  }
-
   &__slider-photo {
     border-radius: 2px;
     margin-right: 21px;
@@ -795,6 +797,7 @@
   }
 
   &__slider-text {
+    margin-left: 2px;
     font-weight: 400;
     font-style: italic;
     font-size: 15px;

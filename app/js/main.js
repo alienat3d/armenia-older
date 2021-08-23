@@ -4,11 +4,9 @@ $(function () {
   $(".about-us__slider-lg").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 7000,
     fade: true,
     asNavFor: ".about-us__slider-sm",
-    arrows: false,
+    arrows: false
   });
   // === / LEFT SLIDER===
   // === RIGHT SLIDER===
@@ -28,12 +26,11 @@ $(function () {
   $(".locations__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 10000,
     prevArrow:
-      "<button type='button' class='slick-prev'><img src='images/icons/slider-arrow-left.svg'></button>",
+      "<button type='button' class='slick-prev'><svg width='46' height='10' viewBox='0 0 46 10'><path opacity='1' d='M0.540382 5.45962C0.286541 5.20578 0.286541 4.79422 0.540382 4.54038L4.67696 0.403806C4.9308 0.149965 5.34235 0.149965 5.5962 0.403806C5.85003 0.657647 5.85003 1.0692 5.5962 1.32304L1.91924 5L5.5962 8.67696C5.85003 8.9308 5.85003 9.34235 5.5962 9.59619C5.34235 9.85003 4.9308 9.85003 4.67696 9.59619L0.540382 5.45962ZM46 5.65H1V4.35H46V5.65Z' fill='black'/></svg></button>",
     nextArrow:
-      "<button type='button' class='slick-next'><img src='images/icons/slider-arrow-right.svg'></button>",
+      "<button type='button' class='slick-next'><svg width='46' height='10' viewBox='0 0 46 10'><path d='M45.4596 5.45962C45.7135 5.20578 45.7135 4.79422 45.4596 4.54038L41.323 0.403806C41.0692 0.149965 40.6576 0.149965 40.4038 0.403806C40.15 0.657647 40.15 1.0692 40.4038 1.32304L44.0808 5L40.4038 8.67696C40.15 8.9308 40.15 9.34235 40.4038 9.59619C40.6576 9.85003 41.0692 9.85003 41.323 9.59619L45.4596 5.45962ZM0 5.65H45V4.35H0V5.65Z' fill='black'/></svg></button>",
+    infinite: false,
   });
   // === / SLICK SLIDER JQ (LOCATIONS) ===
 

@@ -23,28 +23,14 @@ textarea:focus::placeholder {color: transparent;}
   cursor: pointer;
 }
 
-// === CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
-.next-screen-scroll,
-.next-screen-scroll--bright,
-.next-screen-scroll--very-bright,
-.prev-screen-scroll,
-.prev-screen-scroll--bright,
-.prev-screen-scroll--very-bright {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  min-height: 100%;
-  z-index: 5;
+// === SLICK SLIDER UI ===
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  path {
+    opacity: 0.3;
+  }
 }
-
-.prev-screen-scroll,
-.prev-screen-scroll--bright,
-.prev-screen-scroll--very-bright {
-  left: 0;
-}
-// === / CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
+// === / SLICK SLIDER UI ===
 
 // === FIXING FANCYBOX ISSUE ===
 @function max($numbers...) {
@@ -54,6 +40,29 @@ textarea:focus::placeholder {color: transparent;}
   @return m#{i}n(#{$numbers});
 }
 // === / FIXING FANCYBOX ISSUE ===
+
+// === CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
+// .next-screen-scroll,
+// .next-screen-scroll--bright,
+// .next-screen-scroll--very-bright,
+// .prev-screen-scroll,
+// .prev-screen-scroll--bright,
+// .prev-screen-scroll--very-bright {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 20px;
+//   min-height: 100%;
+//   z-index: 5;
+// }
+
+// .prev-screen-scroll,
+// .prev-screen-scroll--bright,
+// .prev-screen-scroll--very-bright {
+//   left: 0;
+// }
+// === / CLICKABLE LEFT & RIGHT SIDES WITH SLOWLY FLASHING ANIMATION ===
 
 // .wrapper {
 // 	display: flex;
