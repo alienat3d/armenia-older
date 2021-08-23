@@ -232,7 +232,7 @@
   padding-bottom: 80px;
   // TODO: ask if such gradient is okay or not
   &__title {
-    margin-bottom: 44px;
+    margin-bottom: 16px;
     // background-image: url("../images/armenia.png");
     // background-repeat: no-repeat;
     // background-size: contain;
@@ -261,6 +261,19 @@
 
   &__bottom {
     margin-bottom: 170px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__text {
+    padding-left: 10px;
+    max-width: 445px;
+    font-size: 15px;
+    line-height: 18px;
+    border-left: 1px solid $green;
+    background-color: rgba($black, 0.1);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 
   &__button-icon {
@@ -1229,8 +1242,8 @@
     display: inline-block;
     transition: $transition;
 
-    &:hover{
-    transform: scale(1.15);
+    &:hover {
+      transform: scale(1.15);
     }
   }
 
