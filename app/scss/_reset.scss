@@ -1,17 +1,10 @@
-html {
-  box-sizing: border-box;
-}
+// === MY CUSTOM RESET SETUP ===
+html { box-sizing: border-box; }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
+*, *::after, *::before { box-sizing: inherit; }
 
 ul[class],
-ol[class] {
-  padding: 0;
-}
+ol[class] { padding: 0; }
 
 body,
 h1,
@@ -33,9 +26,7 @@ dd {
   font-size: inherit;
 }
 
-ul[class] {
-  list-style: none;
-}
+ul[class] { list-style: none; }
 
 img {
   max-width: 100%;
@@ -45,9 +36,7 @@ img {
 input,
 button,
 textarea,
-select {
-  font: inherit;
-}
+select { font: inherit; }
 
 a {
   text-decoration: none;
@@ -55,3 +44,6 @@ a {
   display: inline-block;
   cursor: default;
 }
+
+a:active { outline:none; }
+// === / MY CUSTOM RESET SETUP ===
