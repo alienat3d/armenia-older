@@ -116,7 +116,7 @@
   }
 
   &__btn-link {
-    border-radius: 3px;
+    border-radius: 2px;
     width: 11px;
     height: 10px;
     margin-bottom: 25px;
@@ -140,6 +140,7 @@
       background-color: #7b8b9e;
     }
   }
+
   &__menu {
     position: absolute;
     display: none;
@@ -178,6 +179,7 @@
   &__link.navigation__link--hero {
     color: #000;
   }
+
   &__link {
     height: 22px;
     font-weight: 600;
@@ -195,6 +197,7 @@
     color: rgba(#fff, 0.5);
     cursor: default;
   }
+
   &__link-btn {
     display: inline-flex;
     height: 17px;
@@ -203,18 +206,20 @@
     border: 1px solid #000;
     border-radius: 3px;
     margin-left: 8px;
-  }
-  &__link-btn--disabled {
-    display: inline-flex;
-    height: 17px;
-    width: 19px;
-    background-color: rgba(#fff, 0.5);
-    border: 1px solid rgba(#000, 0.5);
-    border-radius: 3px;
-    margin-left: 8px;
-    cursor: default;
+
+    &--disabled {
+      display: inline-flex;
+      height: 17px;
+      width: 19px;
+      background-color: rgba(#fff, 0.5);
+      border: 1px solid rgba(#000, 0.5);
+      border-radius: 3px;
+      margin-left: 8px;
+      cursor: default;
+    }
   }
 }
+
 .about-armenia,
 .offer,
 .about-us,

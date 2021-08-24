@@ -1,3 +1,48 @@
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+  
+  .navigation {
+    &__btn-link {
+      margin-bottom: 23px;
+      border-radius: 2px;
+      width: 9px;
+      height: 8px;
+    }
+  }
 
+  .logo__text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+  }
+
+  .hero {
+    &__title-word {
+      font-size: 103px;
+      line-height: 126px;
+      text-align: center;
+      letter-spacing: 0.32em;
+    }
+
+    &__bottom {
+      display: block;
+    }
+
+    &__text {
+      padding-left: 7px;
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    &__button {
+      display: none;
+      // max-width: 173px;
+      // height: 41px;
+      // margin-left: 0;
+      // font-size: 13px;
+      // line-height: 16px;
+    }
+  }
 }
