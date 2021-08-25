@@ -44,18 +44,17 @@
 }
 
 .logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
 
-  &__image {
-    margin-right: 10px;
-  }
-
-  &__text {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
+  &::before {
+    content: '';
+    background-image: url('../images/icons/logo.svg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
   }
 }
 // === NAVIGATION ===
