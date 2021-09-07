@@ -1,0 +1,25 @@
+body {
+  background-color: #333;
+}
+
+.css {
+  height: 762px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(244, 253, 247, 0.915698) 0.02%, 
+  rgba(150, 240, 175, 0.2) 243.81%);
+}
+
+.png {
+  height: 762px;
+  background-image: url(../app/images/content/green-bg.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jpg {
+  height: 762px;
+  background-image: url(../app/images/content/green-bg.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

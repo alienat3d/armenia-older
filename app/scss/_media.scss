@@ -1,8 +1,27 @@
+@media (max-width: 1024px) {
+  .hero {
+    &__title {
+      text-align: center;
+      font-size: 103px;
+      line-height: 126px;
+      letter-spacing: 0.24em;
+    }
+
+    &__bottom {
+      display: block;
+    }
+    
+    &__button {
+      margin-left: 0;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 25px;
   }
-  
+
   .navigation {
     &__btn-link {
       margin-bottom: 23px;

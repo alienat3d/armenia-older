@@ -18,7 +18,12 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo cursor" href="#">Mrs Guide</a>
+          <a class="logo cursor" href="#">
+            <picture class="logo__picture">
+              <source media="(max-width:1024px)" srcset="images/logo-black-tablet.svg">
+              <img class="logo__image" src="images/logo-white.svg">
+            </picture>
+          </a>
           <a class="header__phone cursor" href="tel:77777777777">
             +7-777-777-7777
           </a>
@@ -28,16 +33,15 @@
     <main class="content">
       <section class="hero">
         <div class="container">
-          <!-- FIXME: delete .hero__title if gradient on text for .title-word approved -->
-          <div class="hero__title">
-            <h1 class="hero__title-word">Армения</h1>
-          </div>
+            <h1 class="hero__title">Армения</h1>
           <div class="hero__bottom">
             <p class="hero__text">
               Армения, Армения, Армения.. Страна, которая крадет сердце каждого, кто там однажды побывал.
               Невозможно не покориться красоте природы, вкусу армянской кухни и гостеприимству ее жителей.
             </p>
-            <a class="hero__button cursor" href="#offer">
+            <!-- FIXME: upload & add link to pop-up -->
+            <a class="hero__button cursor" data-fancybox
+              href="https://drive.google.com/file/d/1qjof89FpoY6LX2_57UzVEKNZ2VSCMVEx/">
               <svg class="hero__button-icon" width="22" height="24" viewBox="0 0 22 24" fill="#10EA67">
                 <path
                   d="M20.5625 13.7374C21.9083 12.97 21.9083 11.03 20.5625 10.2626L3.81882 0.714981C2.48552 -0.0452995 0.828125 0.917532 0.828125 2.45237L0.828125 21.5476C0.828125 23.0825 2.48552 24.0453 3.81882 23.285L20.5625 13.7374Z">
@@ -749,7 +753,7 @@
               </a>
             </div>
             <div class="footer__authors-wrapper">
-              <a class="footer__contact-author cursor" href="https://freelance.ru/rimma0226
+              <a class="footer__contact-author cursor" href="https://www.weblancer.net/users/rimmaWD/
 ">
                 <h3 class="footer__author">Дизайн — Римма Чобанян</h3>
               </a>

@@ -10,7 +10,7 @@
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: top center;
 }
 
 .header {
@@ -40,21 +40,6 @@
     left: 0;
     top: 2px;
     background-image: url("../images/icons/header-phone.svg");
-  }
-}
-
-.logo {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-
-  &::before {
-    content: '';
-    background-image: url('../images/icons/logo.svg');
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    left: 0;
   }
 }
 // === NAVIGATION ===
@@ -234,33 +219,27 @@
 
 .hero {
   padding-bottom: 80px;
-  // TODO: ask if such gradient is okay or not
-  &__title {
-    margin-bottom: 16px;
-    // background-image: url("../images/armenia.png");
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: center;
-  }
 
-  &__title-word {
-    // color: transparent;
+  &__title {
+    margin-bottom: 13px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 208px;
+    line-height: 244px;
+    letter-spacing: 50px;
     background: -webkit-linear-gradient(
-      rgba(#fff, 1) 50%,
-      rgba(#fff, 0.8) 63%,
-      rgba(#fff, 0.6) 70%,
-      rgba(#fff, 0.3) 80%,
-      rgba(#fff, 0.1) 90%,
-      rgba(#fff, 0) 100%
+      #fff 50%,
+      rgba(255, 255, 255, 0.8) 63%,
+      rgba(255, 255, 255, 0.6) 70%,
+      rgba(255, 255, 255, 0.4) 76%,
+      rgba(255, 255, 255, 0.3) 80%,
+      rgba(255, 255, 255, 0.2) 82%,
+      rgba(255, 255, 255, 0.1) 84%,
+      rgba(255, 255, 255, 0) 87%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 300;
-    font-size: 220px;
-    line-height: 244px;
-    width: 100%;
-    letter-spacing: 42px;
   }
 
   &__bottom {
