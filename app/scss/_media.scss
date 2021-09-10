@@ -1,62 +1,6 @@
-// @media (max-width: 1024px) {
-  // FIXME: its for 768px!!!
-//   .container {
-//     padding: 0 78px;
-//   }
-
-//   .hero {
-//     &__title {
-//       text-align: center;
-//       font-size: 135px;
-//       line-height: 206px;
-//       letter-spacing: 0.29em;
-//     }
-
-//     &__text {
-//       margin-bottom: 22px;
-//       padding-left: 7px;
-//       font-size: 13px;
-//       line-height: 16px;
-//     }
-
-//     &__bottom {
-//       display: block;
-//     }
-
-//     &__button {
-//       display: none;
-
-//       &--tablet {
-//         position: relative;
-//         display: inline-block;
-//         border: 2px solid $green;
-//         padding: 12px 26px 13px 47px;
-//         font-size: 13px;
-//         line-height: 16px;
-
-//         &::before {
-//           content: "";
-//           position: absolute;
-//           left: 20px;
-//           top: 30%;
-//           background-image: url("../images/icons/play-button-green--tablet.svg");
-//           background-repeat: no-repeat;
-//           width: 21px;
-//           height: 21px;
-//         }
-//       }
-//     }
-//   }
-
-//   .navigation__btn-link {
-//     width: 9px;
-//     height: 8px;
-//   }
-// }
-
 @media (max-width: 768px) {
   .container {
-    padding: 0 25px;
+    padding: 0 78px;
   }
 
   .navigation {
@@ -68,18 +12,13 @@
     }
   }
 
-  .logo__text {
-    font-size: 13px;
-    line-height: 16px;
-    color: #000;
-  }
-
   .hero {
-    &__title-word {
-      font-size: 103px;
-      line-height: 126px;
+    &__title {
+      margin-bottom: 42px;
+      font-size: 100px;
+      line-height: 124px;
       text-align: center;
-      letter-spacing: 0.32em;
+      letter-spacing: 0.24em;
     }
 
     &__bottom {
@@ -87,6 +26,7 @@
     }
 
     &__text {
+      margin-bottom: 35px;
       padding-left: 7px;
       font-size: 13px;
       line-height: 16px;
@@ -94,11 +34,26 @@
 
     &__button {
       display: none;
-      // max-width: 173px;
-      // height: 41px;
-      // margin-left: 0;
-      // font-size: 13px;
-      // line-height: 16px;
+
+      &--tablet {
+        position: relative;
+        display: inline-block;
+        border: 2px solid $green;
+        padding: 12px 26px 13px 47px;
+        font-size: 13px;
+        line-height: 16px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 20px;
+          top: 30%;
+          background-image: url("../images/icons/play-button-green--tablet.svg");
+          background-repeat: no-repeat;
+          width: 21px;
+          height: 21px;
+        }
+      }
     }
   }
 }
