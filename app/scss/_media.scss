@@ -1,21 +1,58 @@
-@media (max-width: 1024px) {
-  .hero {
-    &__title {
-      text-align: center;
-      font-size: 103px;
-      line-height: 126px;
-      letter-spacing: 0.24em;
-    }
+// @media (max-width: 1024px) {
+  // FIXME: its for 768px!!!
+//   .container {
+//     padding: 0 78px;
+//   }
 
-    &__bottom {
-      display: block;
-    }
-    
-    &__button {
-      margin-left: 0;
-    }
-  }
-}
+//   .hero {
+//     &__title {
+//       text-align: center;
+//       font-size: 135px;
+//       line-height: 206px;
+//       letter-spacing: 0.29em;
+//     }
+
+//     &__text {
+//       margin-bottom: 22px;
+//       padding-left: 7px;
+//       font-size: 13px;
+//       line-height: 16px;
+//     }
+
+//     &__bottom {
+//       display: block;
+//     }
+
+//     &__button {
+//       display: none;
+
+//       &--tablet {
+//         position: relative;
+//         display: inline-block;
+//         border: 2px solid $green;
+//         padding: 12px 26px 13px 47px;
+//         font-size: 13px;
+//         line-height: 16px;
+
+//         &::before {
+//           content: "";
+//           position: absolute;
+//           left: 20px;
+//           top: 30%;
+//           background-image: url("../images/icons/play-button-green--tablet.svg");
+//           background-repeat: no-repeat;
+//           width: 21px;
+//           height: 21px;
+//         }
+//       }
+//     }
+//   }
+
+//   .navigation__btn-link {
+//     width: 9px;
+//     height: 8px;
+//   }
+// }
 
 @media (max-width: 768px) {
   .container {
