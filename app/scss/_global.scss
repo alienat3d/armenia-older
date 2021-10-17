@@ -2,6 +2,7 @@ html,
 body {height: 100%;}
 
 body {
+  overflow-x: hidden;
   color: $white;
   font-family: $main-font;
   font-weight: 700;
