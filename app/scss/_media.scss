@@ -1,3 +1,4 @@
+// === MAX-WIDTH [ < 768px ] ===
 @media (max-width: 768px) {
   .container {
     padding: 0 78px;
@@ -15,9 +16,8 @@
       height: 8px;
     }
 
-    &__buttons-bar--hero,
-    .navigation__buttons-bar--about-armenia {
-      transform: translateY(-17%);
+    &__buttons-bar--hero {
+      transform: translateY(-20%);
     }
   }
 
@@ -50,9 +50,11 @@
         position: relative;
         display: inline-block;
         border: 2px solid $green;
+        border-radius: 1px;
         padding: 12px 26px 13px 47px;
         font-size: 13px;
         line-height: 16px;
+        background-color: rgba($green, .2);
 
         &::before {
           content: "";
@@ -68,3 +70,86 @@
     }
   }
 }
+// === / MAX-WIDTH [ < 768px ] ===
+
+// === MAX-WIDTH [ < 320px ] ===
+@media (max-width: 320px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-wrapper {
+    background: url("../images/hero-background-mobile.jpg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header {
+    margin-bottom: 155px;
+  }
+
+  .header__inner {
+    padding: 25px 0 0;
+  }
+
+  .header__phone {
+    padding-left: 5px;
+    font-size: 13px;
+    line-height: 16px;
+
+    &::before {
+      left: -12px;
+    }
+  }
+
+  .hero__title {
+    margin-bottom: 24px;
+    font-size: 49px;
+    line-height: 60px;
+    letter-spacing: 0.15em;
+  }
+
+  .hero__text {
+    margin-bottom: 40px;
+    padding-left: 4px;
+    max-width: 223px;
+    font-size: 7px;
+    line-height: 9px;
+  }
+
+  .navigation__btn-link {
+    margin-bottom: 15px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .navigation__buttons-bar {
+    right: 8%;
+  }
+
+  .navigation__buttons-bar--hero {
+    transform: translateY(17%);
+  }
+
+  .navigation__btn-link--hero {
+    background-color: #7d823a;
+  }
+
+  .hero__button--tablet {
+    padding: 7px 11px 7px 21px;
+    border: 1px solid $green;
+    font-size: 6px;
+    line-height: 1;
+
+    &::before {
+      background-image: url("../images/icons/play-button-green--mobile.svg");
+      width: 9px;
+      height: 9px;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+// === / MAX-WIDTH [ < 320px ] ===
