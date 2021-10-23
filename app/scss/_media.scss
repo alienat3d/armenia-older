@@ -87,10 +87,12 @@
 
   // === ABOUT-ARMENIA ===
   .about-armenia {
-    padding: 70px 0;
+    padding: $indent-tab 0;
   }
 
-  .about-armenia__inner { margin-right: 0; }
+  .about-armenia__inner {
+    margin-right: 0;
+  }
 
   .about-armenia__heading {
     margin-bottom: 37px;
@@ -109,11 +111,13 @@
     flex-wrap: wrap;
   }
 
-  .about-armenia__description { margin-right: 0; }
+  .about-armenia__description {
+    margin-right: 0;
+  }
 
   .about-armenia__text {
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 22px;
     width: 620px;
   }
 
@@ -137,9 +141,8 @@
   .about-armenia__video-cover-play {
     width: 56px;
     height: 56px;
-    top: 66.5%;
-    right: 45.5%;
   }
+  // === / ABOUT-ARMENIA ===
 }
 // === / MAX-WIDTH [ < 768px ] ===
 
@@ -147,6 +150,16 @@
 @media (max-width: 320px) {
   .container {
     padding: 0 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .hero-wrapper {
@@ -178,7 +191,7 @@
     margin-bottom: 24px;
     font-size: 49px;
     line-height: 60px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.11em;
   }
 
   .hero__text {
@@ -222,5 +235,40 @@
       transform: translateY(-50%);
     }
   }
+
+  // === ABOUT-ARMENIA ===
+  .about-armenia {
+    padding: $indent-phone 0;
+  }
+
+  .about-armenia__heading::before,
+  .about-armenia__heading::after {
+    width: 14%;
+  }
+
+  .about-armenia__text {
+    max-width: 280px;
+  }
+
+  .about-armenia__text-link {
+    margin-bottom: 21px;
+    width: 106px;
+    font-size: 9px;
+    line-height: 13px;
+
+    &::after {
+      left: 91px;
+    }
+  }
+
+  .about-armenia__video-cover {
+    min-width: 227px;
+}
+
+  .about-armenia__video-cover-play {
+    width: 27px;
+    height: 27px;
+  }
+  // === / ABOUT-ARMENIA ===
 }
 // === / MAX-WIDTH [ < 320px ] ===

@@ -1,0 +1,1 @@
+FIXME: change HTML structure for headings. Remove ::after & ::before and make Flexbox + divs instead.

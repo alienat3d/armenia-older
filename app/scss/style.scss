@@ -391,7 +391,7 @@
 
 .about-armenia {
   position: relative;
-  padding-top: $between;
+  padding-top: $indent;
   min-height: 100vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -477,24 +477,31 @@
     cursor: pointer;
   }
 
-  &__video-cover {
+  &__pictures {
     position: relative;
+  }
+
+  &__video-cover {
     min-width: 681px;
-    // min-height: 327px;
     border-radius: 3px;
     filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.27));
     z-index: 1;
   }
 
-  &__video-cover-play {
+  &__video-link {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    z-index: 2;
+  }
+
+  &__video-cover-play {
     width: 78px;
     height: 78px;
-    top: 39.5%;
-    right: 32.5%;
     border-radius: 50%;
     transition: $transition;
-    z-index: 2;
+
     &:hover {
       transform: scale(1.05);
     }
@@ -603,8 +610,7 @@
 }
 
 .offer {
-  padding-top: $between;
-  padding-bottom: 60px;
+  padding: $indent 0 60px;
   position: relative;
   background-image: url("../images/offer-background.jpg");
   background-attachment: fixed;
@@ -638,8 +644,7 @@
 
 .about-us {
   position: relative;
-  padding-top: $between;
-  // padding-bottom: $between;
+  padding-top: $indent;
   min-height: 100vh;
   color: #000;
   background: rgb(255, 255, 255);
@@ -808,8 +813,7 @@
 
 .locations {
   position: relative;
-  padding-top: $between;
-  padding-bottom: $between;
+  padding: $indent 0;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
@@ -963,7 +967,7 @@
 
 .contacts {
   position: relative;
-  padding-top: $between;
+  padding-top: $indent;
 
   &__heading {
     margin-bottom: 35px;
